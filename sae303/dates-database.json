@@ -1,0 +1,12 @@
+{
+    "dates" : {
+        "1913":[{"id-pays":0,"niveau":0,"texte":"Belgique"}],
+        "1920":[
+            {"id-pays":0,"niveau":0,"texte":"Russie"},
+            {"id-pays":0,"niveau":0,"texte":"Biélorussie"},
+            {"id-pays":0,"niveau":0,"texte":"France"}
+        ],
+        "1930":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}],
+        "2022":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}]
+    }
+}
