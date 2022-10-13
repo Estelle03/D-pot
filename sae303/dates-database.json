@@ -129,6 +129,71 @@
             {"id-pays":0,"niveau":0,"texte":"Estonie"},
             {"id-pays":0,"niveau":0,"texte":"Azerbaïdjan"}
         ],
-        "2022":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}]
+        "1992":[
+            {"id-pays":0,"niveau":0,"texte":"Hongrie"},
+            {"id-pays":0,"niveau":0,"texte":"Slovénie"},
+            {"id-pays":1,"niveau":0,"texte":"Bosnie-Herzégovine"}
+        ],
+        "1993":[
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":0,"niveau":0,"texte":"Pologne"}
+        ],
+        "1994":[{"id-pays":4,"niveau":0,"texte":"Littuanie"}],
+        "1995":[
+            {"id-pays":0,"niveau":0,"texte":"Allemagne"},
+            {"id-pays":0,"niveau":0,"texte":"Albanie"}
+        ],
+        "1998":[{"id-pays":0,"niveau":0,"texte":"Estonie"}],
+        "2000":[{"id-pays":0,"niveau":0,"texte":"Géorgie"}],
+        "2001":[{"id-pays":1,"niveau":0,"texte":"France"}],
+        "2002":[{"id-pays":0,"niveau":0,"texte":"Suisse"}],
+        "2004":[{"id-pays":1,"niveau":0,"texte":"France"}],
+        "2007":[{"id-pays":0,"niveau":0,"texte":"Portugal"}],
+        "2008":[{"id-pays":0,"niveau":0,"texte":"Luxembourg"}],
+        "2009":[{"id-pays":0,"niveau":0,"texte":"Montenegro"}],
+        "2010":[{"id-pays":0,"niveau":0,"texte":"Espagne"}],
+        "2013":[
+            {"id-pays":3,"niveau":0,"texte":"Biélorussie"},
+            {"id-pays":0,"niveau":0,"texte":"Irlande"},
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":0,"niveau":0,"texte":"Espagne"},
+            {"id-pays":0,"niveau":0,"texte":"Macédoine"},
+            {"id-pays":0,"niveau":0,"texte":"Lettonie"}
+        ],
+        "2014":[
+            {"id-pays":0,"niveau":0,"texte":"Luxembourg"},
+            {"id-pays":0,"niveau":0,"texte":"Espagne"},
+            {"id-pays":1,"niveau":0,"texte":"Croatie"}
+        ],
+        "2015":[
+            {"id-pays":0,"niveau":0,"texte":"Liechtenstein"},
+            {"id-pays":0,"niveau":0,"texte":"Estonie"},
+            {"id-pays":0,"niveau":0,"texte":"Portugal"}
+        ],
+        "2016":[{"id-pays":0,"niveau":0,"texte":"Arménie"}],
+        "2017":[{"id-pays":0,"niveau":0,"texte":"Croatie"}],
+        "2018":[
+            {"id-pays":0,"niveau":0,"texte":"Chypre"},
+            {"id-pays":4,"niveau":0,"texte":"Littuanie"},
+            {"id-pays":0,"niveau":0,"texte":"Irlande"}
+        ],
+        "2019":[
+            {"id-pays":0,"niveau":0,"texte":"Monaco"},
+            {"id-pays":0,"niveau":0,"texte":"Macédoine"},
+            {"id-pays":0,"niveau":0,"texte":"Islande"}
+        ],
+        "2020":[{"id-pays":0,"niveau":0,"texte":"Slovaquie"}],
+        "2021":[
+            {"id-pays":0,"niveau":0,"texte":"Pologne"},
+            {"id-pays":0,"niveau":0,"texte":"Malte"},
+            {"id-pays":0,"niveau":0,"texte":"Saint-Marin"}
+        ],
+        "2022":[
+            {"id-pays":0,"niveau":0,"texte":"Saint-Marin"},
+            {"id-pays":0,"niveau":0,"texte":"Malte"},
+            {"id-pays":0,"niveau":0,"texte":"Allemagne"},
+            {"id-pays":0,"niveau":0,"texte":"Suisse"},
+            {"id-pays":0,"niveau":0,"texte":"Hongrie"}
+        ]
     }
 }
