@@ -6,7 +6,15 @@
             {"id-pays":0,"niveau":0,"texte":"Biélorussie"},
             {"id-pays":0,"niveau":0,"texte":"France"}
         ],
-        "1930":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}],
+        "1923":[{"id-pays":0,"niveau":0,"texte":"Belgique"}],
+        "1927":[{"id-pays":0,"niveau":0,"texte":"Allemegne"}],
+        "1933":[{"id-pays":0,"niveau":0,"texte":"Allemagne"}],
+        "1935":[{"id-pays":0,"niveau":0,"texte":"Islande"}],
+        "1936":[{"id-pays":0,"niveau":0,"texte":"URSS"}],
+        "1938":[{"id-pays":0,"niveau":0,"texte":"Suède"}],
+        "1939":[{"id-pays":0,"niveau":0,"texte":"Danemark"}],
+
+
         "2022":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}]
     }
 }
