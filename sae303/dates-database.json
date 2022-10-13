@@ -2,19 +2,133 @@
     "dates" : {
         "1913":[{"id-pays":0,"niveau":0,"texte":"Belgique"}],
         "1920":[
-            {"id-pays":0,"niveau":0,"texte":"Russie"},
-            {"id-pays":0,"niveau":0,"texte":"Biélorussie"},
-            {"id-pays":0,"niveau":0,"texte":"France"}
+            {"id-pays":7,"niveau":0,"texte":"Russie"},
+            {"id-pays":3,"niveau":0,"texte":"Biélorussie"},
+            {"id-pays":1,"niveau":0,"texte":"France"}
         ],
         "1923":[{"id-pays":0,"niveau":0,"texte":"Belgique"}],
-        "1927":[{"id-pays":0,"niveau":0,"texte":"Allemegne"}],
-        "1933":[{"id-pays":0,"niveau":0,"texte":"Allemagne"}],
+        "1927":[{"id-pays":6,"niveau":0,"texte":"Allemegne"}],
+        "1933":[{"id-pays":6,"niveau":0,"texte":"Allemagne"}],
         "1935":[{"id-pays":0,"niveau":0,"texte":"Islande"}],
         "1936":[{"id-pays":0,"niveau":0,"texte":"URSS"}],
         "1938":[{"id-pays":0,"niveau":0,"texte":"Suède"}],
         "1939":[{"id-pays":0,"niveau":0,"texte":"Danemark"}],
-
-
+        "1940":[
+            {"id-pays":0,"niveau":0,"texte":"Belgique"},
+            {"id-pays":0,"niveau":0,"texte":"Lettonie=URSS"}
+        ],
+        "1941":[{"id-pays":0,"niveau":0,"texte":"Espagne"}],
+        "1942":[{"id-pays":0,"niveau":0,"texte":"Suisse"}],
+        "1943":[{"id-pays":6,"niveau":0,"texte":"Allemagne"}],
+        "1944":[{"id-pays":0,"niveau":0,"texte":"Espagne"}],
+        "1950":[
+            {"id-pays":6,"niveau":0,"texte":"Allemagne"},
+            {"id-pays":5,"niveau":0,"texte":"République Tchèque"},
+            {"id-pays":0,"niveau":0,"texte":"Finlande"}
+        ],
+        "1952":[{"id-pays":0,"niveau":0,"texte":"Croatie"}],
+        "1953":[{"id-pays":0,"niveau":0,"texte":"Hongrie"}],
+        "1955":[
+            {"id-pays":7,"niveau":0,"texte":"Russie"},
+            {"id-pays":0,"niveau":0,"texte":"Estonie"},
+            {"id-pays":0,"niveau":0,"texte":"Arménie"},
+            {"id-pays":0,"niveau":0,"texte":"Lettonie"},
+            {"id-pays":0,"niveau":0,"texte":"Moldavie"},
+            {"id-pays":0,"niveau":0,"texte":"Azerbaïdjan"}
+        ],
+        "1956":[
+            {"id-pays":0,"niveau":0,"texte":"Pologne"},
+            {"id-pays":0,"niveau":0,"texte":"Hongrie"},
+            {"id-pays":0,"niveau":0,"texte":"Bulgarie"}
+        ],
+        "1960":[
+            {"id-pays":0,"niveau":0,"texte":"Norvège"},
+            {"id-pays":0,"niveau":0,"texte":"Croatie"},
+            {"id-pays":0,"niveau":0,"texte":"Belgique"}
+        ],
+        "1964":[
+            {"id-pays":0,"niveau":0,"texte":"Malte"},
+            {"id-pays":0,"niveau":0,"texte":"Norvège"}
+        ],
+        "1965":[{"id-pays":6,"niveau":0,"texte":"Allemagne"}],
+        "1967":[
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":0,"niveau":0,"texte":"Monaco"}
+        ],
+        "1968":[{"id-pays":0,"niveau":0,"texte":"Bulgarie"}],
+        "1969":[{"id-pays":0,"niveau":0,"texte":"Croatie"}],
+        "1971":[{"id-pays":0,"niveau":0,"texte":"Pays-Bas"}],
+        "1972":[
+            {"id-pays":6,"niveau":0,"texte":"Allemagne"},
+            {"id-pays":1,"niveau":0,"texte":"France"}
+        ],
+        "1973":[
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":0,"niveau":0,"texte":"Danemark"},
+            {"id-pays":0,"niveau":0,"texte":"Bulgarie"},
+            {"id-pays":0,"niveau":0,"texte":"Suisse"}
+        ],
+        "1974":[
+            {"id-pays":0,"niveau":0,"texte":"Saint-Marin"},
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":0,"niveau":0,"texte":"Suisse"}
+        ],
+        "1975":[
+            {"id-pays":0,"niveau":0,"texte":"Islande"},
+            {"id-pays":1,"niveau":0,"texte":"France"},
+            {"id-pays":1,"niveau":0,"texte":"Autriche"},
+            {"id-pays":0,"niveau":0,"texte":"Suède"}
+        ],
+        "1976":[{"id-pays":0,"niveau":0,"texte":"Belgique"}],
+        "1977":[
+            {"id-pays":0,"niveau":0,"texte":"Serbie"},
+            {"id-pays":1,"niveau":0,"texte":"Montenegro"},
+            {"id-pays":1,"niveau":0,"texte":"Slovénie"},
+            {"id-pays":0,"niveau":0,"texte":"Macédoine"}
+        ],
+        "1978":[
+            {"id-pays":0,"niveau":0,"texte":"Luxembourg"},
+            {"id-pays":0,"niveau":0,"texte":"Italie"},
+            {"id-pays":0,"niveau":0,"texte":"Norvège"},
+            {"id-pays":0,"niveau":0,"texte":"Grèce"},
+            {"id-pays":0,"niveau":0,"texte":"Croatie"}
+        ],
+        "1979":[{"id-pays":1,"niveau":0,"texte":"France"}],
+        "1981":[{"id-pays":0,"niveau":0,"texte":"Pays-Bas"}],
+        "1982":[{"id-pays":1,"niveau":0,"texte":"France"}],
+        "1983":[
+            {"id-pays":0,"niveau":0,"texte":"Turquie"},
+            {"id-pays":0,"niveau":0,"texte":"Irlande"}
+        ],
+        "1984":[
+            {"id-pays":0,"niveau":0,"texte":"Portugal"},
+            {"id-pays":0,"niveau":0,"texte":"Pays-Bas"}
+        ],
+        "1985":[
+            {"id-pays":0,"niveau":0,"texte":"Pays-Bas"},
+            {"id-pays":0,"niveau":0,"texte":"Espagne"}
+        ],
+        "1986":[{"id-pays":0,"niveau":0,"texte":"Grèce"}],
+        "1987":[
+            {"id-pays":3,"niveau":0,"texte":"Biélorussie"},
+            {"id-pays":0,"niveau":0,"texte":"Lettonie"}
+        ],
+        "1989":[
+            {"id-pays":0,"niveau":0,"texte":"Albanie"},
+            {"id-pays":0,"niveau":0,"texte":"Italie"}
+        ],
+        "1990":[
+            {"id-pays":0,"niveau":0,"texte":"Bulgarie"},
+            {"id-pays":0,"niveau":0,"texte":"Belgique"},
+            {"id-pays":1,"niveau":0,"texte":"France"}
+        ],
+        "1991":[
+            {"id-pays":0,"niveau":0,"texte":"Croatie"},
+            {"id-pays":0,"niveau":0,"texte":"Ukraine"},
+            {"id-pays":1,"niveau":0,"texte":"Albanie"},
+            {"id-pays":0,"niveau":0,"texte":"Estonie"},
+            {"id-pays":0,"niveau":0,"texte":"Azerbaïdjan"}
+        ],
         "2022":[{"id-pays":0,"niveau":0,"texte":"Lorem Ipsum"}]
     }
 }
