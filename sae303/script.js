@@ -7,7 +7,7 @@ function ColorLevel(niveau) {
         const tabColor = ["#b0b0b0","#E32932","#F6AA1C","#BE95C4","#5A90D6"];
         return tabColor[niveau];
     } else if (niveau>4){
-        console.log("t'as fumer quoi y'a 4 niveau patate")
+        console.log("t'as fumer quoi? y'a 4 niveau patate")
     }
     else {
         return "#b0b0b0";
@@ -26,6 +26,27 @@ function style(feature) {
     };
 }
 
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        niveau = [0, 1, 2, 3, 4];
+        text = [
+            "Pas de données",
+            "Illégal",
+            "Illégal sauf conditions (danger, viol, inceste)",
+            "Légal sous conditions (santé, économie, statut social)",
+            "Légal sans conditions (en fonction des délais)"
+        ];
+
+    for (var i = 0; i < niveau.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + ColorLevel(niveau) + '"></i> ' +
+            niveau[i] + (niveau[i + 1] ? '&ndash;' + niveau[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
 $.getJSON(mapEurope,function(data){
     var map = L.map('map').setView([58, 20], 3);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
@@ -34,20 +55,4 @@ $.getJSON(mapEurope,function(data){
     }).addTo(map);
     L.geoJson(data, {clickable: false , style: style }).addTo(map); 
 })
-
-legend.onAdd = function (map) {
-
-    var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 1, 2, 3, 4],
-        labels = [];
-
-    for (var i = 0; i < grades.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + ColorLevel(grades[i] + 1) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-    }
-
-    return div;
-};
-
 legend.addTo(map);
