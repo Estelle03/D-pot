@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
     <link rel="stylesheet" href="saeGraphique.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js" defer></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js" defer></script>
-    <script src="script.js" defer></script>
     <title>Datavis</title>
     <style type="text/css">
         .leaflet-container{background-color:#c5e8ff;}
@@ -17,13 +14,13 @@
 <body>
     <h1>Évolution du droit à l'avortement en Europe</h1>
 
-    <nav>
+    <!-- <nav>
         <div id="rouge"></div>
         <p>Illégal</p>
     </nav>
     <nav>
         <div id="jaune"></div>
-        <p>Illégal sauf conditions</p> <br> <p>(danger, viol, inceste)</p>
+        <p>Illégal sauf conditions</p> <br> <p>(danger, viol, incest)</p>
     </nav>
     <nav>
         <div id="violet"></div>
@@ -36,8 +33,74 @@
     <nav>
         <div id="gris"></div>
         <p>Pas de données</p>
-    </nav>
+    </nav> -->
 
     <div id="map" style="width: 600px; height: 400px;"></div>
+
+    <div class="slider">
+        <div id="cursorSlide">
+            <label for="fader">Date :  </label>
+            <span id="rangeValue">1915</span>
+        </div>
+        <input type="range" min="1915" max="2025" value="0" id="fader" 
+        step="5" list="volsettings" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+    </div>
+    <script type="text/javascript">
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
+    </script>>
+        <datalist id="volsettings">
+        <option>1915</option>
+        <option>1920</option>
+        <option>1925</option>
+        <option>1930</option>
+        <option>1935</option>
+        <option>1940</option>
+        <option>1945</option>
+        <option>1950</option>
+        <option>1955</option>
+        <option>1960</option>
+        <option>1965</option>
+        <option>1970</option>
+        <option>1975</option>
+        <option>1980</option>
+        <option>1985</option>
+        <option>1990</option>
+        <option>1995</option>
+        <option>2000</option>
+        <option>2005</option>
+        <option>2010</option>
+        <option>2015</option>
+        <option>2020</option>
+        <option>2025</option>
+        </datalist>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+    <script>
+        var myGeoJSONPath = 'custom.geo.json';
+        var myCustomStyle = {
+            stroke: true,
+            strokeColor: 'red',
+            strokeOpacity: 1,
+            fill: true,
+            /* fillColor: 'red',
+            fillOpacity: 0.2 */
+        } 
+        $.getJSON(myGeoJSONPath,function(data){
+            var map = L.map('map').setView([58, 20], 3);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            L.geoJson(data, {
+                clickable: false,
+                style: myCustomStyle
+            }).addTo(map); 
+        })
+    </script>
 </body>
 </html>
