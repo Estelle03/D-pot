@@ -1,5 +1,5 @@
 var mapEurope = 'custom.geo.json';
-var legend = L.control({position: 'bottomright'});
+var legend = L.control({position: 'bottomleft'});
 
 //attribut une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
@@ -26,22 +26,18 @@ function style(feature) {
     };
 }
 
-legend.onAdd = function (map) {
-
+legend.onAdd = function AddLegende() {
     var div = L.DomUtil.create('div', 'info legend'),
         niveau = [0, 1, 2, 3, 4];
-        text = [
-            "Pas de données",
+        text = ["Pas de données",
             "Illégal",
             "Illégal sauf conditions (danger, viol, inceste)",
             "Légal sous conditions (santé, économie, statut social)",
-            "Légal sans conditions (en fonction des délais)"
-        ];
-
+            "Légal sans conditions (en fonction des délais)"];
     for (var i = 0; i < niveau.length; i++) {
         div.innerHTML +=
             '<i style="background:' + ColorLevel(niveau) + '"></i> ' +
-            niveau[i] + (niveau[i + 1] ? '&ndash;' + niveau[i + 1] + '<br>' : '+');
+            niveau[i] + text[i];
     }
 
     return div;
