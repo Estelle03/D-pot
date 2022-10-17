@@ -34,18 +34,16 @@ function style(feature) {
 legend.onAdd = function (map) {
     console.log("fonction")
     var div = L.DomUtil.create('div', 'info legend'),
-        niveau = [0, 1, 2, 3, 4];
+        level = [0, 1, 2, 3, 4];
         text = ["Pas de données",
             "Illégal",
             "Illégal sauf conditions (danger, viol, inceste)",
             "Légal sous conditions (santé, économie, statut social)",
             "Légal sans conditions (en fonction des délais)"];
-    for (var i = 0; i < niveau.length; i++) {
+    for (var i = 0; i < level.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + ColorLevel(niveau) + '"></i> ' +
-            niveau[i] + text[i];
+            '<i style="background:' + ColorLevel(level[i]) + '"></i> ' + text[i] + "</br>";
     }
-
     return div;
 };
 
