@@ -1,20 +1,80 @@
 *::after {
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
-body{
+
+/* body {
     height: 100vh;
-}
-#map{
-    display: flex;
+} */
+
+#map {
+    border: black solid 5px;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    left: 30%;
+
 }
-h1{
+
+body {
+    background: white;
+}
+
+.slider {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 150px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fcfcfc;
+    border: black solid 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0px 15px 40px #7E6D5766; */
+}
+
+.slider label {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    /* color: black; */
+    font-size: 5em;
+    color: #999;
+    font-weight: 400;
+}
+
+.slider input[type="range"] {
+    width: 520px;
+    height: 20px;
+    border: 1px;
+    outline: none;
+}
+
+#rangeValue {
+    position: relative;
+    top: 0%;
+    display: block;
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(17, 16, 16);
+    font-weight: 400;
+}
+
+#cursorSlide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
     text-align: center;
 }
 
-#rouge{
+#rouge {
     width: 50px;
     height: 50px;
     background-color: #E32932;
@@ -23,16 +83,18 @@ h1{
     margin: 0% 1% 1% 10%;
     top: 20%;
 }
-#jaune{
+
+#jaune {
     width: 50px;
     height: 50px;
     background-color: #F6AA1C;
     display: flex;
     position: relative;
     margin: 0% 1% 1% 10%;
-    top: 40% ;
+    top: 40%;
 }
-#violet{
+
+#violet {
     width: 50px;
     height: 50px;
     background-color: #BE95C4;
@@ -42,7 +104,7 @@ h1{
     top: 60%;
 }
 
-#bleu{
+#bleu {
     width: 50px;
     height: 50px;
     background-color: #5A90D6;
@@ -51,7 +113,8 @@ h1{
     margin: 0% 1% 1% 10%;
     top: 80%;
 }
-#gris{
+
+#gris {
     width: 50px;
     height: 50px;
     background-color: #b0b0b0;
@@ -60,13 +123,15 @@ h1{
     margin: 0% 1% 1% 10%;
     top: 100%;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     height: 50px;
     height: 50px;
 }
-p{
+
+p {
     font-size: 1.2em;
 }
 
