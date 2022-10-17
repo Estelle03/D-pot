@@ -1,6 +1,11 @@
 var mapEurope = 'custom.geo.json';
 var legend = L.control({position: 'bottomleft'});
 
+//fonction pour le curseur
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value;
+}
+
 //attribut une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
     if(niveau){
@@ -26,7 +31,8 @@ function style(feature) {
     };
 }
 
-legend.onAdd = function AddLegende() {
+legend.onAdd = function (map) {
+    console.log("fonction")
     var div = L.DomUtil.create('div', 'info legend'),
         niveau = [0, 1, 2, 3, 4];
         text = ["Pas de données",
@@ -50,5 +56,6 @@ $.getJSON(mapEurope,function(data){
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     L.geoJson(data, {clickable: false , style: style }).addTo(map); 
+    legend.addTo(map);
+    console.log("hello")
 })
-legend.addTo(map);
