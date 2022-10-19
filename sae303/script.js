@@ -1,17 +1,13 @@
 const mapEurope = 'custom.geo.json';
-const touteslesdates = 'dates-database.json'
-const legend = L.control({position: 'bottomleft'});
-
-function dataUpdate(dates){
-    dates.forEach(element => {
-        style(element.niveau)
-    });
-    
-}
 
 //fonction pour le curseur
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
+}
+
+function jsplenom(features){
+    let valueCurseur = document.querySelector("#fader").value;
+    return style(features.properties["d"+valueCurseur])
 }
 
 //attribut une couleur en fonction du niveau de l'indicateur
@@ -39,6 +35,19 @@ function style(niveau) {
     };
 }
 
+//affiche la carte
+const legend = L.control({position: 'bottomleft'});
+
+$.getJSON(mapEurope,function(data){
+    var map = L.map('map').setView([58, 20], 3);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    L.geoJson(data, {clickable: false , style: jsplenom}).addTo(map); 
+    legend.addTo(map);
+})
+
 //affiche la légende
 legend.onAdd = function (map) {
     console.log("fonction")
@@ -51,17 +60,3 @@ legend.onAdd = function (map) {
     }
     return div;
 };
-
-$.getJSON(mapEurope,function(data){
-    var map = L.map('map').setView([58, 20], 3);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    L.geoJson(data, {clickable: false , style: style }).addTo(map); 
-    legend.addTo(map);
-})
-
-$.getJSON(touteslesdates, function(date){
-    L.geoJson(date,{clickable: false, style: dataUpdate}).addTo(map);
-})
