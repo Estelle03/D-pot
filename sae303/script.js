@@ -1,6 +1,11 @@
 var mapEurope = 'custom.geo.json';
 var legend = L.control({position: 'bottomleft'});
 
+//fonction pour le curseur
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value;
+}
+
 //attribut une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
     if(niveau){
@@ -26,20 +31,19 @@ function style(feature) {
     };
 }
 
-legend.onAdd = function AddLegende() {
+legend.onAdd = function (map) {
+    console.log("fonction")
     var div = L.DomUtil.create('div', 'info legend'),
-        niveau = [0, 1, 2, 3, 4];
+        level = [0, 1, 2, 3, 4];
         text = ["Pas de données",
             "Illégal",
             "Illégal sauf conditions (danger, viol, inceste)",
             "Légal sous conditions (santé, économie, statut social)",
             "Légal sans conditions (en fonction des délais)"];
-    for (var i = 0; i < niveau.length; i++) {
+    for (var i = 0; i < level.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + ColorLevel(niveau) + '"></i> ' +
-            niveau[i] + text[i];
+            '<i style="background:' + ColorLevel(level[i]) + '"></i> ' + text[i] + "</br>";
     }
-
     return div;
 };
 
@@ -50,5 +54,6 @@ $.getJSON(mapEurope,function(data){
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     L.geoJson(data, {clickable: false , style: style }).addTo(map); 
+    legend.addTo(map);
+    console.log("hello")
 })
-legend.addTo(map);
