@@ -6,7 +6,6 @@
             "properties": {
                 "id": 1,
                 "name": "France",
-                "niveau": 3,
                 "d1913": 4
             },
             "geometry": {
