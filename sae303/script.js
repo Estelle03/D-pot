@@ -1,14 +1,18 @@
-var mapEurope = 'custom.geo.json';
-var legend = L.control({position: 'bottomleft'});
+const mapEurope = 'custom.geo.json';
 
 //fonction pour le curseur
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
 }
 
+function jsplenom(features){
+    let valueCurseur = document.querySelector("#fader").value;
+    return style(features.properties["d"+valueCurseur])
+}
+
 //attribut une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
-    if(niveau){
+    if(niveau<=4){
         const tabColor = ["#b0b0b0","#E32932","#F6AA1C","#BE95C4","#5A90D6"];
         return tabColor[niveau];
     } else if (niveau>4){
@@ -20,9 +24,9 @@ function ColorLevel(niveau) {
 };
 
 //ajoute la couleur au pays
-function style(feature) {
+function style(niveau) {
     return {
-        fillColor: ColorLevel(feature.properties.niveau),
+        fillColor: ColorLevel(niveau),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -31,21 +35,8 @@ function style(feature) {
     };
 }
 
-legend.onAdd = function (map) {
-    console.log("fonction")
-    var div = L.DomUtil.create('div', 'info legend'),
-        level = [0, 1, 2, 3, 4];
-        text = ["Pas de données",
-            "Illégal",
-            "Illégal sauf conditions (danger, viol, inceste)",
-            "Légal sous conditions (santé, économie, statut social)",
-            "Légal sans conditions (en fonction des délais)"];
-    for (var i = 0; i < level.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + ColorLevel(level[i]) + '"></i> ' + text[i] + "</br>";
-    }
-    return div;
-};
+//affiche la carte
+const legend = L.control({position: 'bottomleft'});
 
 $.getJSON(mapEurope,function(data){
     var map = L.map('map').setView([58, 20], 3);
@@ -53,7 +44,19 @@ $.getJSON(mapEurope,function(data){
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    L.geoJson(data, {clickable: false , style: style }).addTo(map); 
+    L.geoJson(data, {clickable: false , style: jsplenom}).addTo(map); 
     legend.addTo(map);
-    console.log("hello")
 })
+
+//affiche la légende
+legend.onAdd = function (map) {
+    console.log("fonction")
+    var div = L.DomUtil.create('div', 'info legend'),
+        level = [0, 1, 2, 3, 4];
+        text = ["Pas de données","Illégal","Illégal sauf conditions (danger, viol, inceste)","Légal sous conditions (santé, économie, statut social)","Légal sans conditions (en fonction des délais)"];
+    for (var i = 0; i < level.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + ColorLevel(level[i]) + '"></i> ' + text[i] + "</br>";
+    }
+    return div;
+};

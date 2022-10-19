@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
     <link rel="stylesheet" href="saeGraphique.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js" defer></script>
     <script src="script.js" defer></script>
     <title>Datavis</title>
     <style type="text/css">
@@ -14,6 +16,7 @@
 </head>
 <body>
     <h1>Évolution du droit à l'avortement en Europe</h1>
+    <a id="information" href="PageInformations.html">i</a>
 
     <div id="map" style="width: 60vw; height: 40vw;"></div>
 
@@ -25,11 +28,11 @@
         <input type="range" min="1915" max="2025" value="0" id="fader" 
         step="5" list="volsettings" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
     </div> -->
-    <!-- <label class="slider">
+    <label class="slider">
         <div id="cursorSlide">Dates : <span id="rangeValue">1910</span></div>
-        <input id="fader" type="range" min="1910" max="2025" step="5" value="0" list="volsettings" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
-    </label> -->
-        <datalist id="volsettings">
+        <input id="fader" type="range" min="1910" max="2025" step="1" value="0"  onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+    </label>
+        <!-- <datalist id="volsettings">
         <option>1915</option>
         <option>1920</option>
         <option>1925</option>
@@ -53,11 +56,7 @@
         <option>2015</option>
         <option>2020</option>
         <option>2025</option>
-        </datalist>
+        </datalist> -->
     </div>
-
-
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
 </body>
 </html>
