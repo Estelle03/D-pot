@@ -1,47 +1,47 @@
 {
     "dates" : {
-        "1913":[
-            {"id-pays":43,"niveau":0,"texte":"Vatican (depuis 1398) : Il n'existe aucune loi interdisant l'avortement mais puisque ce sont les règles de la Bible qui s'applique sur ce territoire, l'avortement est un acte moralement inacceptable."},
-            {"id-pays":37,"niveau":0,"texte":"Andorre (epuis toujours) : Il est illégal y compris en cas d'inceste, de viol, d'anomalie grave du fœtus ou de danger pour la vie de la mère. Passible de six mois de prison pour la femme et 3 ans interdiction d’exercer pour le médecin."},
-            {"id-pays":30,"niveau":0,"texte":"Liechtenstein (depuis toujours) : L'avortement est illégal dans la plupart des cas et est passible de peines de prison pour la femme comme pour le médecin qui le pratique"},
-            {"id-pays":13,"niveau":0,"texte":"Belgique : Dans le Code Pénal de 1867, l'avortement figure parmi les crimes  « contre l’ordre des familles et contre la moralité publique ». En 1913 Henry Carton de Wiart réalise un projet de loi finalement voté après la Première Guerre mondiale en 1923, destiné à punir les incitations à l'avortement ainsi que la propagande pour la contraception."}
+        "d1913":[
+            {"id-pays":43,"niveau":1,"texte":"Vatican (depuis 1398) : Il n'existe aucune loi interdisant l'avortement mais puisque ce sont les règles de la Bible qui s'applique sur ce territoire, l'avortement est un acte moralement inacceptable."},
+            {"id-pays":37,"niveau":1,"texte":"Andorre (epuis toujours) : Il est illégal y compris en cas d'inceste, de viol, d'anomalie grave du fœtus ou de danger pour la vie de la mère. Passible de six mois de prison pour la femme et 3 ans interdiction d’exercer pour le médecin."},
+            {"id-pays":30,"niveau":1,"texte":"Liechtenstein (depuis toujours) : L'avortement est illégal dans la plupart des cas et est passible de peines de prison pour la femme comme pour le médecin qui le pratique"},
+            {"id-pays":13,"niveau":1,"texte":"Belgique : Dans le Code Pénal de 1867, l'avortement figure parmi les crimes  « contre l’ordre des familles et contre la moralité publique ». En 1913 Henry Carton de Wiart réalise un projet de loi finalement voté après la Première Guerre mondiale en 1923, destiné à punir les incitations à l'avortement ainsi que la propagande pour la contraception."}
         ],
-        "1920":[
-            {"id-pays":7,"niveau":0,"texte":"Russie : La République socialiste fédérative soviétique de Russie (RSFSR) a été le premier État au monde à légaliser l'interruption de grossesse."},
-            {"id-pays":3,"niveau":0,"texte":"Biélorussie appartient à l'Union soviétique et par conséquent l'avortement y est illégal."},
-            {"id-pays":1,"niveau":0,"texte":"France : loi qui interdit la contraception et l’avortement."}
+        "d1920":[
+            {"id-pays":7,"niveau":4,"texte":"Russie : La République socialiste fédérative soviétique de Russie (RSFSR) a été le premier État au monde à légaliser l'interruption de grossesse."},
+            {"id-pays":3,"niveau":1,"texte":"Biélorussie appartient à l'Union soviétique et par conséquent l'avortement y est légal."},
+            {"id-pays":1,"niveau":1,"texte":"France : loi qui interdit la contraception et l’avortement."}
         ],
-        "1927":[{"id-pays":6,"niveau":0,"texte":"Allemegne - 11 Mars 1927 : Le tribunal du Reich accorde l’exception de l’avortement pour autoriser l’avortement en cas d'indication médicale stricte. "}],
-        "1933":[{"id-pays":6,"niveau":0,"texte":"Allemagne : Mise en place de l'article 219a pénalise d'une «peine privative de liberté allant jusqu'à deux ans et d'une amende» toute personne qui, «en public ou par ses écrits», «propose, annonce, fait de la publicité ou rend publiques des déclarations tendant à pratiquer ou promouvoir une interruption de grossesse» ou encore à «faire référence à des moyens, des objets ou des procédés susceptibles d'interrompre une grossesse […]» "}],
-        "1935":[{"id-pays":42,"niveau":0,"texte":"Islande : L'avortement est un droit même s'il est limité pour des raisons médicales ou sociales, comme par exemple une incapacité de prendre en charge l’enfant."}],
-        "1936":[
-            {"id-pays":7,"niveau":0,"texte":"URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
-            {"id-pays":19,"niveau":0,"texte":"Roumanie : Depuis 1867, l'avortement était illégal. À compter de 1936, il est uniquement autorisé en cas de danger pour la mère."}
+        "1927":[{"id-pays":6,"niveau":1,"texte":"Allemegne - 11 Mars 1927 : Le tribunal du Reich accorde l’exception de l’avortement pour autoriser l’avortement en cas d'indication médicale stricte. "}],
+        "1933":[{"id-pays":6,"niveau":1,"texte":"Allemagne : Mise en place de l'article 219a pénalise d'une «peine privative de liberté allant jusqu'à deux ans et d'une amende» toute personne qui, «en public ou par ses écrits», «propose, annonce, fait de la publicité ou rend publiques des déclarations tendant à pratiquer ou promouvoir une interruption de grossesse» ou encore à «faire référence à des moyens, des objets ou des procédés susceptibles d'interrompre une grossesse […]» "}],
+        "1935":[{"id-pays":42,"niveau":3,"texte":"Islande : L'avortement est un droit même s'il est limité pour des raisons médicales ou sociales, comme par exemple une incapacité de prendre en charge l’enfant."}],
+        "d1936":[
+            {"id-pays":7,"niveau":1,"texte":"URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
+            {"id-pays":19,"niveau":3,"texte":"Roumanie : Depuis 1867, l'avortement était illégal. À compter de 1936, il est uniquement autorisé en cas de danger pour la mère."}
         ],
-        "1938":[{"id-pays":11,"niveau":0,"texte":"Suède : L'avortement thérapeutique est autorisé."}],
-        "1939":[{"id-pays":18,"niveau":0,"texte":"Danemark : L'avortement est légalisé mais n'est autorisé que dans certains cas ; si la grossesse présente des risques de malformation du foetus, un danger pour la vie ou la santé de la mère ou si la grossesse est issu d'un viol."}],
-        "1940":[
-            {"id-pays":13,"niveau":0,"texte":"Belgique :  Des avortements thérapeutiques ont lieu dans certains hôpitaux, tandis que d'autres sont pratiqués illégalement dans les années 1960 par certains plannings familiaux."},
-            {"id-pays":10,"niveau":0,"texte":"Lettonie appartient à l'URSS et par conséquent l'avortement y est illégal."}
+        "d1938":[{"id-pays":11,"niveau":0,"texte":"Suède : L'avortement thérapeutique est autorisé."}],
+        "d1939":[{"id-pays":18,"niveau":3,"texte":"Danemark : L'avortement est légalisé mais n'est autorisé que dans certains cas ; si la grossesse présente des risques de malformation du foetus, un danger pour la vie ou la santé de la mère ou si la grossesse est issu d'un viol."}],
+        "d1940":[
+            {"id-pays":13,"niveau":3,"texte":"Belgique :  Des avortements thérapeutiques ont lieu dans certains hôpitaux, tandis que d'autres sont pratiqués illégalement dans les années 1960 par certains plannings familiaux."},
+            {"id-pays":10,"niveau":1,"texte":"Lettonie appartient à l'URSS et par conséquent l'avortement y est illégal."}
         ],
-        "1941":[{"id-pays":20,"niveau":0,"texte":"Espagne : Pendant le gouvernement de Franco, le'avortement est considéré comme un crime contre l'état. "}],
-        "1942":[{"id-pays":28,"niveau":0,"texte":"Suisse : L’avortement est passible d’une peine d'emprisonnement pour la femme ayant avorté ainsi que le médecin l'y ayant aidé d’après le Code Pénal."}],
-        "1943":[{"id-pays":6,"niveau":0,"texte":"Allemagne : Le Troisième Reich considère l’avortement comme une “atteinte à la force vitale du peuple allemand”. En outre, l'interdiction stricte ne concerne – à l'exception de l'indication médicale – que les grossesses souhaitées “racialement pures”. Au delà de ces exceptions la peine encourue est la peine de mort."}],
-        "1945":[{"id-pays":46,"niveau":0,"texte":"Irlande du Nord : L’Offences Against the Person Act 1861 qui interdit toute forme d'interruption de grossesse est amendé par le Criminal Justice Act de 1945 qui dépénalise l’avortement en cas de danger pour la vie de la mère lorsque l’acte a été pratiqué « de bonne foi ». Dans la région, l’avortement n’est donc pas autorisé en cas de viol, d’inceste ou d’anomalie fœtale létale (fatal fetal abnormality) ou grave (serious fetal abnormality)."}],
-        "1950":[
-            {"id-pays":6,"niveau":0,"texte":"Allemagne - 27 Septembre 1950 : La loi sur la protection de la mère et de l'enfant et sur les droits de la femme entre en vigueur. Avec l’article 11, elle introduit une réglementation unifiée de l'interruption volontaire de grossesse en RDA."},
-            {"id-pays":5,"niveau":0,"texte":"République Tchèque : L'avortement se fait sans condition jusqu'à douze semaines de grossesse, en respectant une période d’au moins six mois entre deux avortements, sauf si la femme a plus de 35 ans, a déjà deux enfants ou a subi un viol."},
-            {"id-pays":12,"niveau":0,"texte":"Finlande : L'avortement est légalisé, cependant il n'est autorisé que dans le cadre d'un viol ou de malformation du foetus. Enfin il est permis dans d'autres cas mais reste restreint."}
+        "d1941":[{"id-pays":20,"niveau":1,"texte":"Espagne : Pendant le gouvernement de Franco, l'avortement est considéré comme un crime contre l'état. "}],
+        "d1942":[{"id-pays":28,"niveau":1,"texte":"Suisse : L’avortement est passible d’une peine d'emprisonnement pour la femme ayant avorté ainsi que le médecin l'y ayant aidé d’après le Code Pénal."}],
+        "d1943":[{"id-pays":6,"niveau":2,"texte":"Allemagne : Le Troisième Reich considère l’avortement comme une “atteinte à la force vitale du peuple allemand”. En outre, l'interdiction stricte ne concerne – à l'exception de l'indication médicale – que les grossesses souhaitées “racialement pures”. Au delà de ces exceptions la peine encourue est la peine de mort."}],
+        "d1945":[{"id-pays":46,"niveau":1,"texte":"Irlande du Nord : L’Offences Against the Person Act 1861 qui interdit toute forme d'interruption de grossesse est amendé par le Criminal Justice Act de 1945 qui dépénalise l’avortement en cas de danger pour la vie de la mère lorsque l’acte a été pratiqué « de bonne foi ». Dans la région, l’avortement n’est donc pas autorisé en cas de viol, d’inceste ou d’anomalie fœtale létale (fatal fetal abnormality) ou grave (serious fetal abnormality)."}],
+        "d1950":[
+            {"id-pays":6,"niveau":2,"texte":"Allemagne - 27 Septembre 1950 : La loi sur la protection de la mère et de l'enfant et sur les droits de la femme entre en vigueur. Avec l’article 11, elle introduit une réglementation unifiée de l'interruption volontaire de grossesse en RDA."},
+            {"id-pays":5,"niveau":4,"texte":"République Tchèque : L'avortement se fait sans condition jusqu'à douze semaines de grossesse, en respectant une période d’au moins six mois entre deux avortements, sauf si la femme a plus de 35 ans, a déjà deux enfants ou a subi un viol."},
+            {"id-pays":12,"niveau":3,"texte":"Finlande : L'avortement est légalisé, cependant il n'est autorisé que dans le cadre d'un viol ou de malformation du foetus. Enfin il est permis dans d'autres cas mais reste restreint."}
         ],
-        "1952":[{"id-pays":32,"niveau":0,"texte":"Croatie : L'avortement est autorisé sur indication médicale, eugénique ou légale."}],
-        "1953":[{"id-pays":21,"niveau":0,"texte":"Hongrie : L'avortement est légal sous certaines conditions."}],
-        "1955":[
-            {"id-pays":7,"niveau":0,"texte":"Russie - 23 Novembre 1955 : La mort de Staline et la fin du régime soviétique entraîne le retour d’une législation concernant l’avortement. Il est donc à nouveau en vigueur depuis cette date. La loi autorise l’avortement sur simple demande de la femme jusqu’à 12 semaines (28 semaines pour raisons médicales), et garantit la gratuité sous certaines conditions."},
-            {"id-pays":8,"niveau":0,"texte":"Estonie : L'avortement est illégal depuis le 23 Novembre 1955 alors que le trritoire fait partie de l'Union soviétique."},
-            {"id-pays":10,"niveau":0,"texte":"Lettonie : L’avortement est restreint de sorte qu’il ne peut être pratiqué que dans les trois premiers mois de la grossesse, à moins que l’accouchement ne mette la mère en danger. et seulement à l’hôpital."},
-            {"id-pays":41,"niveau":0,"texte":"Moldavie : L'avortement est legal jusqu’à 12 semaines et jusqu’à 21 semaines pour des raisons de santé (malformation du foetus, danger pour la vie ou la santé de la mère, pour une mère âgée de moins de 18 ans ou de plus de 40 ans)."}        
+        "d1952":[{"id-pays":32,"niveau":3,"texte":"Croatie : L'avortement est autorisé sur indication médicale, eugénique ou légale."}],
+        "d1953":[{"id-pays":21,"niveau":2,"texte":"Hongrie : L'avortement est légal sous certaines conditions."}],
+        "d1955":[
+            {"id-pays":7,"niveau":4,"texte":"Russie - 23 Novembre 1955 : La mort de Staline entraîne le retour d’une législation concernant l’avortement. Il est donc à nouveau en vigueur depuis cette date. La loi autorise l’avortement sur simple demande de la femme jusqu’à 12 semaines (28 semaines pour raisons médicales), et garantit la gratuité sous certaines conditions."},
+            {"id-pays":8,"niveau":1,"texte":"Estonie : L'avortement est illégal depuis le 23 Novembre 1955 tandis que le territoire fait partie de l'Union soviétique."},
+            {"id-pays":10,"niveau":3,"texte":"Lettonie : L’avortement est restreint de sorte qu’il ne peut être pratiqué que dans les trois premiers mois de la grossesse, à moins que l’accouchement ne mette la mère en danger. et seulement à l’hôpital."},
+            {"id-pays":41,"niveau":3,"texte":"Moldavie : L'avortement est legal jusqu’à 12 semaines et jusqu’à 21 semaines pour des raisons de santé (malformation du foetus, danger pour la vie ou la santé de la mère, pour une mère âgée de moins de 18 ans ou de plus de 40 ans)."}        
         ],
-        "1956":[
+        "d1956":[
             {"id-pays":23,"niveau":0,"texte":"Pologne - 27 Avril 1956 : La loi pour l'avortement est modifiée au niveau des conditions qui permettent d'y avoir accès."},
             {"id-pays":21,"niveau":0,"texte":"Hongrie : L'avortement est autorisé à condition d’avoir l’autorisation du corps médical d’un centre de santé."},
             {"id-pays":34,"niveau":0,"texte":"Bulgarie - 27 Avril 1956 : Une loi passe, autorisant l'avortement  jusqu’à 12 semaines y compris dans une démarche thérapeutique."}
@@ -52,13 +52,13 @@
         "1960":[
             {"id-pays":9,"niveau":0,"texte":"Norvège : L'avortement est légalisé mais aucune loi n'est promulguée."},
             {"id-pays":32,"niveau":0,"texte":"Croatie : L'avortement est interdit sauf pour des raisons soaciales."},
-            {"id-pays":13,"niveau":0,"texte":"Belgique - 30 Juin 1960 : L'indépendance du Congo belge est proclamée. Les femmes portant ainsi un enfant d'un homme noir sont autorisé à avorter sans risquer d'être poursuivies."}
+            {"id-pays":13,"niveau":2,"texte":"Belgique - 30 Juin 1960 : L'indépendance du Congo belge est proclamée. Les femmes portant ainsi un enfant d'un homme noir sont autorisé à avorter sans risquer d'être poursuivies."}
         ],
         "1964":[
             {"id-pays":44,"niveau":0,"texte":"Date de création de l'état Maltais et de sa constitution, dans laquelle il est écrit que les mères et les médecins encourent une peine de prison allant de 18 mois à 4 ans pour avoir pratiqué un avortement."},
             {"id-pays":9,"niveau":0,"texte":"Norvège : La loi pour l'avortement passe. Ce dernier est autorisé uniquement si la mère est en danger et que la décison et prise par deux médecins."}
         ],
-        "1965":[{"id-pays":6,"niveau":0,"texte":"Allemagne : L'article 11 entre en vigueur, il autorise  l’interruption de grossesse est autorisée après une indication médicale ou embryopathique, « lorsque le développement de l'enfant met gravement en péril la vie ou la santé de la femme enceinte ou lorsque l'un des parents souffre d'une grave maladie héréditaire » "}],
+        "d1965":[{"id-pays":6,"niveau":3,"texte":"Allemagne : L'article 11 entre en vigueur, il autorise  l’interruption de grossesse est autorisée après une indication médicale ou embryopathique, « lorsque le développement de l'enfant met gravement en péril la vie ou la santé de la femme enceinte ou lorsque l'un des parents souffre d'une grave maladie héréditaire » "}],
         "1966":[
             {"id-pays":19,"niveau":0,"texte":"Roumanie : Pour favoriser la natalité, l'avortement (tout comme la contraception) est interdit."}
         ],
@@ -66,37 +66,37 @@
             {"id-pays":1,"niveau":0,"texte":"France - loi Newirth : l’avortement, toujours considéré comme un crime, autorise la vente des contraceptifs en pharmacie sur ordonnance médicale et avec autorisation parentale pour les mineurs."},
             {"id-pays":36,"niveau":0,"texte":"Monaco : L'avortement est interdit et est considéré comme illégal."}
         ],
-        "1968":[
+        "d1968":[
             {"id-pays":34,"niveau":0,"texte":"Bulgarie - Février 1968 : L'avortement est interdit."},
             {"id-pays":46,"niveau":0,"texte":"Irlande du Nord : L'Abortion Act de 1967 ne s'appliquant pas sur le térritoire d'Irlande du Nord, la loi qui s'y applique est l’Offences Against the Person Act 1861 qui interdit toute forme d'interruption de grossesse."},
             {"id-pays":45,"niveau":0,"texte":"Royaume-Uni  - Abortion Act de 1967 : À partir du 27 Avril 1968, l'interruption d'une grossesse n'était pas punissable si elle était pratiquée dans les 28 premières semaines de la grossesse et si deux médecins avaient fourni une attestation que la santé physique ou mentale de la femme était en péril ou que des tests médicaux avaient apporté la preuve que l'enfant va naître avec des malformations physiques ou mentales."}
         ],
-        "1969":[
+        "d1969":[
             {"id-pays":45,"niveau":0,"texte":"Royaume-Uni : La Family Law Reform dispose qu'à partir de 16 ans, une fille peut faire avorter sa grossesse sans le consentement de ses parents; tandis qu'avant cet âge, leur consentement est obligatoire."},
             {"id-pays":32,"niveau":0,"texte":"Croatie : Une loi selon laquelle l’approbation d’une commission était requise pour mettre fin à une grossesse dans les 10 premières semaines a été révoquée"}],
-        "1971":[{"id-pays":29,"niveau":0,"texte":"Pays-Bas : La première clinique réalisant des interruptions volontaires de grossesse ouvre ses portes."}],
-        "1972":[
-            {"id-pays":6,"niveau":0,"texte":"Allemagne - 9 Mars 1972 : Loi sur l'interruption volontaire de grossesse est adoptée par le parlement de la RDA. "},
-            {"id-pays":1,"niveau":0,"texte":"France : Gisèle Halimiune représente une jeune fille (je crois qu’elle s’appellait marie claire) de 17 ans jugée pour avoir avorté après un viol. Finalement acquittée après un procès qui déchira la France."}
+        "d1971":[{"id-pays":29,"niveau":0,"texte":"Pays-Bas : La première clinique réalisant des interruptions volontaires de grossesse ouvre ses portes."}],
+        "d1972":[
+            {"id-pays":6,"niveau":4,"texte":"Allemagne - 9 Mars 1972 : Loi sur l'interruption volontaire de grossesse est adoptée par le parlement de la RDA. "},
+            {"id-pays":1,"niveau":1,"texte":"France : Gisèle Halimiune représente une jeune fille de 17 ans jugée pour avoir avorté après un viol. Finalement acquittée après un procès qui déchira la France."}
         ],
-        "1973":[
-            {"id-pays":1,"niveau":0,"texte":"France : 13 décembre 1973, loi porté par ministre de la Santé, autorisant l’avortement « en cas de risque pour la santé physique, mentale ou psychique de la femme, d’un risque élevé de malformation congénitale ou d’une grossesse consécutive à un acte de violence » est rejeté de 225 voix contre et 212 pour."},
-            {"id-pays":18,"niveau":0,"texte":"Danemark : Une loi autorisant l’avortement libre et gratuit jusqu’à la 12 semaine de grossesse."},
-            {"id-pays":34,"niveau":0,"texte":"Bulgarie L'IVG est autorisé uniquement en cas de viol ou d’inceste (pour les femmes de moins de 18 ans ou au-dessus de 45 ans)."},
-            {"id-pays":28,"niveau":0,"texte":"Suisse - Février 1973 : Création de la Fondation de l'Union suisse pour décriminaliser l'avortement (USPDA)."}
+        "d1973":[
+            {"id-pays":1,"niveau":1,"texte":"France : 13 décembre 1973, le projet de loi porté par le ministre de la Santé, autorisant l’avortement « en cas de risque pour la santé physique, mentale ou psychique de la femme, d’un risque élevé de malformation congénitale ou d’une grossesse consécutive à un acte de violence » est rejeté de 225 voix contre et 212 pour."},
+            {"id-pays":18,"niveau":4,"texte":"Danemark : Une loi autorisant l’avortement libre et gratuit jusqu’à la 12 semaine de grossesse."},
+            {"id-pays":34,"niveau":2,"texte":"Bulgarie L'IVG est autorisé uniquement en cas de viol ou d’inceste (pour les femmes de moins de 18 ans ou au-dessus de 45 ans)."},
+            {"id-pays":28,"niveau":3,"texte":"Suisse - Février 1973 : Création de la Fondation de l'Union suisse pour décriminaliser l'avortement (USPDA)."}
         ],
-        "1974":[
-            {"id-pays":35,"niveau":0,"texte":"Saint-Marin : L'avortement est illégal et passible de prison pour la femme et toute personne qui l’aide."},
-            {"id-pays":1,"niveau":0,"texte":"France : 24 Novembre 1974, Simone Veil propose un texte autorisant avortement avant 10 semaines de grossesse sur demande du médecin. 29 Novembre de la même année, la loi est votée en première lecture à l’assemblée par 284 voix pour et 180 voix contre."},
-            {"id-pays":28,"niveau":0,"texte":"Suisse - 1974 à 1975 : Des propositions de loi et des pétitions sont déposée en faveur de l’avortement mais sont toutes rejetées."}
+        "d1974":[
+            {"id-pays":35,"niveau":1,"texte":"Saint-Marin : L'avortement est illégal et passible de prison pour la femme et toute personne qui l’aide."},
+            {"id-pays":1,"niveau":4,"texte":"France : 24 Novembre 1974, Simone Veil propose un texte autorisant avortement avant 10 semaines de grossesse sur demande du médecin. 29 Novembre de la même année, la loi est votée en première lecture à l’assemblée par 284 voix pour et 180 voix contre."},
+            {"id-pays":28,"niveau":3,"texte":"Suisse - 1974 à 1975 : Des propositions de loi et des pétitions sont déposée en faveur de l’avortement mais sont toutes rejetées."}
         ],
-        "1975":[
-            {"id-pays":42,"niveau":0,"texte":"Islande : Loi du 22 Mai 1975 : L'avortement est «légal dans des circonstances médicales et sociales spécifiques» "},
-            {"id-pays":1,"niveau":0,"texte":"France - 17 Janvier 1975 : Promulgation de la loi dépénalisant l’avortement.Cette loi provisoire est promulguée pour une durée de 5 ans. "},
-            {"id-pays":26,"niveau":0,"texte":"Autriche - 1er Janvier 1975 : L'avortement est totalement légalisé. Il est possible jusqu'à trois mois de grossesse et après si la santé mentale ou physiqe de la mère est en danger, s'il y a un risque dans le développement du foetus ou si la patiente est âgée de moins de 14 ans. La loi protège les praticiens qui ne souhaite pas pratiquer d'avortement."},
-            {"id-pays":11,"niveau":0,"texte":"Suède : Tout type d'interruption de grossesse est autorisé sans justification jusqu’à 18 semaines, cependant ce droit réservé aux suédoises."}
+        "d1975":[
+            {"id-pays":42,"niveau":2,"texte":"Islande : Loi du 22 Mai 1975 : L'avortement est «légal dans des circonstances médicales et sociales spécifiques» "},
+            {"id-pays":1,"niveau":4,"texte":"France - 17 Janvier 1975 : Promulgation de la loi dépénalisant l’avortement.Cette loi provisoire est promulguée pour une durée de 5 ans. "},
+            {"id-pays":26,"niveau":4,"texte":"Autriche - 1er Janvier 1975 : L'avortement est totalement légalisé. Il est possible jusqu'à trois mois de grossesse et après si la santé mentale ou physiqe de la mère est en danger, s'il y a un risque dans le développement du foetus ou si la patiente est âgée de moins de 14 ans. La loi protège les praticiens qui ne souhaite pas pratiquer d'avortement."},
+            {"id-pays":11,"niveau":4,"texte":"Suède : Tout type d'interruption de grossesse est autorisé sans justification jusqu’à 18 semaines, cependant ce droit réservé aux suédoises."}
         ],
-        "1976":[{"id-pays":13,"niveau":0,"texte":"Belgique : Un comité de dépénalisation de l'avortement est créé."}],
+        "d1976":[{"id-pays":13,"niveau":2,"texte":"Belgique : Un comité de dépénalisation de l'avortement est créé."}],
         "1977":[
             {"id-pays":33,"niveau":0,"texte":"Serbie : L'avortement est autorisé jusqu'à 10 semaines de grossesse, un accord parental est demandé aux mineures de moins de 16 ans."},
             {"id-pays":39,"niveau":0,"texte":"Montenegro : la loi de 1977 adoptée par la Yougoslavie. La femme doit payer pour un avortement effectué sur demande, et les avortements ne peuvent être effectués que dans des établissements médicaux qui répondent à certaines normes minimales."},
@@ -134,9 +134,9 @@
             {"id-pays":19,"niveau":0,"texte":"Roumanie : L'indépendance de la Roumanie entraîne une nouvelle législation pour l'avortement, qui est à nouveau légalisé."},
             {"id-pays":27,"niveau":0,"texte":"Italie : La prise d'une pilule abortive est autorisée jusqu'à la 7e semaine mais seulement dans certaines régions."}
         ],
-        "1990":[
+        "d1990":[
             {"id-pays":34,"niveau":0,"texte":"Bulagrie - 1er Février 1990 : L'avortement est autorisé jusqu'à 12 semaines de grossesse et jusqu’à 20 semaines si la santé de la mère est en danger ou foetus porteur de maladie ou handicap."},
-            {"id-pays":13,"niveau":0,"texte":"Belgique : L'avortement est définitivement pénalisé avec la loi de dépénalisation partielle dite loi Lallemand-Michielsen. La loi du 3 avril 1990 précise que chaque femme a le droit de demander une interruption volontaire de grossesse (IVG) car cette intervention est légalement autorisée en Belgique. Sauf en cas de problème médical grave, l'avortement doit avoir lieu avant la fin de la 12e semaine qui suit la conception - donc 14 semaines après les dernières règles."},
+            {"id-pays":13,"niveau":4,"texte":"Belgique : L'avortement est définitivement pénalisé avec la loi de dépénalisation partielle dite loi Lallemand-Michielsen. La loi du 3 avril 1990 précise que chaque femme a le droit de demander une interruption volontaire de grossesse (IVG) car cette intervention est légalement autorisée en Belgique. Sauf en cas de problème médical grave, l'avortement doit avoir lieu avant la fin de la 12e semaine qui suit la conception - donc 14 semaines après les dernières règles."},
             {"id-pays":45,"niveau":0,"texte":"Royaume-Uni : L'Human Fertilisation and Embryologie Act a réduit ce délai à 24 semaines dans les mêmes conditions."},
             {"id-pays":1,"niveau":0,"texte":"France : L'IVG médicamenteuse est autorisée en milieu hospitalier."}
         ],
@@ -155,8 +155,8 @@
             {"id-pays":23,"niveau":0,"texte":"Pologne - Loi du 7 Janvier 1993 : Dans le planning familial, l'avortement est permis afin de protéger le foetus sous condition."}
         ],
         "1994":[{"id-pays":4,"niveau":0,"texte":"Lituanie : L'avortement est légal et disponible sur demande jusqu'à la douzième semaine de grossesse et jusqu'à 22 semaines pour des raisons médicales."}],
-        "1995":[
-            {"id-pays":6,"niveau":0,"texte":"Allemagne : La loi interdit toujours l'IVG, mais celle-ci n'est plus condamnable en deçà de 12 semaines de grossesse"},
+        "d1995":[
+            {"id-pays":6,"niveau":2,"texte":"Allemagne : La loi interdit toujours l'IVG, mais celle-ci n'est plus condamnable en deçà de 12 semaines de grossesse"},
             {"id-pays":16,"niveau":0,"texte":"Albanie - 7 Décembre 1995 : L'avortement est légalisé."}
         ],
         "1998":[{"id-pays":8,"niveau":0,"texte":"Estonie : Adoption de la loi sur l'interruption de grossesse et la stérilisation."}],
@@ -193,7 +193,7 @@
         "2019":[
             {"id-pays":36,"niveau":0,"texte":"Monaco : Autorisation d’avorter dans les cas de viol, de risque pour la santé de la mère ou d'affection ou malformation de l'enfant (loi datant de 2009)"},
             {"id-pays":15,"niveau":0,"texte":"Macédoine : Une loi passe autorisant l'avortement jusqu'à la 12e semaine de grossesse et jusqu'à la 22e semaine dans certaines circonstances."},
-            {"id-pays":42,"niveau":0,"texte":"Islande : Légalisation de l'avortement  jusqu'à la fin de la 22e semaine de grossesse."}
+            {"id-pays":42,"niveau":4,"texte":"Islande : Légalisation de l'avortement  jusqu'à la fin de la 22e semaine de grossesse."}
         ],
         "2020":[
             {"id-pays":46,"niveau":0,"texte":"Irlande du Nord 6 25 Mars 2020 : L e gouvernement britannique publie les Abortion (Northern Ireland) Regulations 2020. En vertu de ces dispositions, l’avortement est possible en Irlande du Nord dans un délai de douze semaines, sans aucune autre condition qu’une attestation médicale relative à la durée de la grossesse. Un avortement après douze semaines est également possible en cas d’anomalie du fœtus, grave ou létale."},
@@ -207,7 +207,7 @@
         "2022":[
             {"id-pays":35,"niveau":0,"texte":"Saint-Marin - 31 Août 2022 : L'avortement est entièrement remboursé et renseigner lors des cours d’éducation sexuelle."},
             {"id-pays":44,"niveau":0,"texte":"Malte : Un recours déposé par 135 médecins contre le Premier Ministre et le Ministre de la Santé dans le but de demander la suppression de l'article du Code pénal condamnant la pratique d'avortements"},
-            {"id-pays":6,"niveau":0,"texte":"Allemagne - 24 Juin 2022 : Suppression de l'article 219a du code pénal allemand interdisant 'la publicité pour l'interruption de grossesse'"},
+            {"id-pays":6,"niveau":2,"texte":"Allemagne - 24 Juin 2022 : Suppression de l'article 219a du code pénal allemand interdisant 'la publicité pour l'interruption de grossesse'"},
             {"id-pays":28,"niveau":0,"texte":"Suisse : Loi du 2 Juin 2022 - « La mère à jusqu'à la 12e semaine pour décider d'interrompre ou non sa grossesse » "},
             {"id-pays":21,"niveau":0,"texte":"Hongrie : Décret du 15 Septembre 2022 - « l'avortement est autorisé à condition que la mère écoute les battements du coeur de l’enfant avant de prendre une décision » "}
         ]
