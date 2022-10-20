@@ -7,7 +7,7 @@
 } */
 
 #map {
-    border: black solid 5px;
+    border: black solid 1px;
     position: absolute;
     left: 30%;
 }
@@ -40,7 +40,7 @@ body {
     padding: 20px;
     padding-left: 40px;
     background: #fcfcfc;
-    border: black solid 5px;
+    border: black solid 1px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
