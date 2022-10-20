@@ -188,7 +188,7 @@
         "d2018":[
             {"id-pays":0,"niveau":4,"texte":"Chypre - Mars 2018 : L'avortement est autorisé jusqu’à 12 semaines de grossesse sans justification et 19 semaines en cas de viol."},
             {"id-pays":4,"niveau":3,"texte":"Lituanie : Il est interdit d'interrompre une grossesse sauf en cas de danger pour la santé ou la vie de la mère ou bien en cas de viol"},
-            {"id-pays":24,"niveau":0,"texte":"Irlande - 13 Décembre 2018 : Le Parlement irlandais adopte le projet de loi prévoyant que l’avortement pourra être pratiqué sans justification pendant les 12 premières semaines de grossesse, jusqu’à 24 semaines en cas de risque grave pour la santé de la mère et ensuite seulement en cas d’anomalie fœtale "}
+            {"id-pays":24,"niveau":4,"texte":"Irlande - 13 Décembre 2018 : Le Parlement irlandais adopte le projet de loi prévoyant que l’avortement pourra être pratiqué sans justification pendant les 12 premières semaines de grossesse, jusqu’à 24 semaines en cas de risque grave pour la santé de la mère et ensuite seulement en cas d’anomalie fœtale "}
         ],
         "d2019":[
             {"id-pays":36,"niveau":3,"texte":"Monaco : Autorisation d’avorter dans les cas de viol, de risque pour la santé de la mère ou d'affection ou malformation de l'enfant (loi datant de 2009)"},
