@@ -1,19 +1,35 @@
 const mapEurope = 'custom.geo.json';
+let geojsoncouche = null;
+
+document.querySelector("#fader").addEventListener("click", ()=> {
+    console.log("click")
+    geojsoncouche.eachLayer(function (layer) {
+        layer.setStyle(styleupdate(layer.feature))
+    }); 
+});
 
 //fonction pour le curseur
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
 }
 
-function jsplenom(features){
+function styleupdate(features){
     let valueCurseur = document.querySelector("#fader").value;
-    return style(features.properties["d"+valueCurseur])
-}
+    while (valueCurseur>=1913){
+        if(features.properties["d"+valueCurseur]!=undefined){
+            let lesdates = features.properties["d"+valueCurseur];
+            return {fillColor: ColorLevel(lesdates.niveau)}
+        } else {
+            valueCurseur= valueCurseur-1
+        }
+    }
+    return {fillColor: ColorLevel(0)}
+    }
 
 //attribut une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
     if(niveau<=4){
-        const tabColor = ["#b0b0b0","#E32932","#F6AA1C","#BE95C4","#5A90D6"];
+        const tabColor = ["#b0b0b0","#E32932","#BE95C4","#F6AA1C","#5A90D6"];
         return tabColor[niveau];
     } else if (niveau>4){
         console.log("t'as fumer quoi? y'a 4 niveau patate")
@@ -44,9 +60,10 @@ $.getJSON(mapEurope,function(data){
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    L.geoJson(data, {clickable: false , style: jsplenom}).addTo(map); 
+    geojsoncouche = L.geoJson(data, {clickable: false , style: style}).addTo(map); 
     legend.addTo(map);
 })
+
 
 //affiche la légende
 legend.onAdd = function (map) {
