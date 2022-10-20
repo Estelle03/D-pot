@@ -1,6 +1,7 @@
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
 
+
 document.querySelector("#fader").addEventListener("click", ()=> {
     console.log("click")
     geojsoncouche.eachLayer(function (layer) {
@@ -51,6 +52,24 @@ function style(niveau) {
     };
 }
 
+function highlightFeature(e) {
+    var layer = e.target;
+    layer.setStyle({
+        weight: 5,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+}
+
 //affiche la carte
 const legend = L.control({position: 'bottomleft'});
 
@@ -63,7 +82,6 @@ $.getJSON(mapEurope,function(data){
     geojsoncouche = L.geoJson(data, {clickable: false , style: style}).addTo(map); 
     legend.addTo(map);
 })
-
 
 //affiche la légende
 legend.onAdd = function (map) {
