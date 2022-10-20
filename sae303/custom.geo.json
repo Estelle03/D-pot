@@ -61611,6 +61611,7 @@
             "properties": {
                 "id":21,
                 "name": "Hongrie",
+                "d1938": {"niveau":0, "texte":"Membre de la Tchécoslovaquie : L'avortement est illégal"},
                 "d1953": {"niveau":2,"texte":"Hongrie : L'avortement est légal sous certaines conditions."},
                 "d1956": {"niveau":2,"texte":"Hongrie : L'avortement est autorisé à condition d’avoir l’autorisation du corps médical d’un centre de santé."},
                 "d1992": {"niveau":4,"texte":"Hongrie : L'avortement est autorisé jusqu'à 12 semaines sauf dans certaines circonstances pouvant aller jusqu'à 24 semaines."},
