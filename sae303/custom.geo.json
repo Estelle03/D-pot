@@ -3339,6 +3339,7 @@
             "properties": {
                 "id":2,
                 "name": "Ukraine",
+                "d1936": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1991": {"niveau":3,"texte":"Ukraine : De 1949 à 1989, la législation concernant l'avortement était établit par l'Union soviétique puisque l'Ukraine en faisait partie. En 1991, l'avortement a été légalisé jusqu'à la 12e semaine et entre la 12e et la 28e semaine si les raisons médiacales, sociales ou personnelles sont approuvée par un comité de médecins."}
             },
             "geometry": {
@@ -5905,6 +5906,7 @@
                 "id":3,
                 "name": "Belarus",
                 "d1920": {"niveau":1,"texte":"Belarus appartient à l'Union soviétique et par conséquent l'avortement y est légal."},
+                "d1936": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1987": {"niveau":3,"texte":"Belarus - 31 Décembre 1987 : La Belarus devient un pays libéral européen en adoptant la législation européenne pour l’avortement et se détache de l’union soviétique."},
                 "d2013": {"niveau":2,"texte":"Belarus : L'avortement est légal dans les trois situations à la demande de la femme, sans autre condition, jusqu'à 12 semaines de grossesse / sur indication médicale, sans condition de délai /pour des motifs sociaux, jusqu'à 22 semaines de grossesse"}
             },
@@ -7205,6 +7207,7 @@
             "properties": {
                 "id":4,
                 "name": "Lituanie",
+                "d1940": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1994": {"niveau":4,"texte":"Lituanie : L'avortement est légal et disponible sur demande jusqu'à la douzième semaine de grossesse et jusqu'à 22 semaines pour des raisons médicales."},
                 "d2018": {"niveau":3,"texte":"Lituanie : Il est interdit d'interrompre une grossesse sauf en cas de danger pour la santé ou la vie de la mère ou bien en cas de viol"}
             },
@@ -7847,6 +7850,7 @@
             "properties": {
                 "id":5,
                 "name": "la République tchèque",
+                "d1945": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1950":{"niveau":4,"texte":"République Tchèque : L'avortement se fait sans condition jusqu'à douze semaines de grossesse, en respectant une période d’au moins six mois entre deux avortements, sauf si la femme a plus de 35 ans, a déjà deux enfants ou a subi un viol."}
             },
             "geometry": {
@@ -11115,6 +11119,7 @@
                 "id": 7,
                 "name": "Russie",
                 "d1920": {"niveau":4,"texte":"Russie : La République socialiste fédérative soviétique de Russie (RSFSR) a été le premier État au monde à légaliser l'interruption de grossesse."},
+                "d1936": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1955": {"niveau":4,"texte":"Russie - 23 Novembre 1955 : La mort de Staline entraîne le retour d’une législation concernant l’avortement. Il est donc à nouveau en vigueur depuis cette date. La loi autorise l’avortement sur simple demande de la femme jusqu’à 12 semaines (28 semaines pour raisons médicales), et garantit la gratuité sous certaines conditions."}
             },
             "geometry": {
@@ -41332,6 +41337,7 @@
             "properties": {
                 "id": 8,
                 "name": "Estonie",
+                "d1940": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1955": {"niveau":1,"texte":"Estonie : L'avortement est illégal depuis le 23 Novembre 1955 tandis que le territoire fait partie de l'Union soviétique."},
                 "d1991": {"niveau":4,"texte":"Estonie : L'avortement esy autorisé alors que l'Estonie obtient son indépendance."},
                 "d1998": {"niveau":4,"texte":"Estonie : Adoption de la loi sur l'interruption de grossesse et la stérilisation."},
@@ -50227,7 +50233,7 @@
             "properties": {
                 "id": 10,
                 "name": "Lettonie",
-                "d1940": {"niveau":1,"texte":"Lettonie appartient à l'URSS et par conséquent l'avortement y est illégal."},
+                "d1940": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1955": {"niveau":3,"texte":"Lettonie : L’avortement est restreint de sorte qu’il ne peut être pratiqué que dans les trois premiers mois de la grossesse, à moins que l’accouchement ne mette la mère en danger. et seulement à l’hôpital."},
                 "d1987": {"niveau":4,"texte":"Lettonie - 31 Décembre 1987 : l’Union soviétique a annoncé qu’elle permettrait à de nombreux établissements médicaux de pratiquer des avortements jusqu’à la 28e semaine de grossesse."},
                 "d2013": {"niveau":4,"texte":"Lettonie : Un avortement peut être effectué sans demande jusqu’à la 12ème semaine de grossesse, et peut être demandé jusqu’à la 28ème."}
@@ -62479,6 +62485,7 @@
             "properties": {
                 "id":22,
                 "name": "Slovaquie",
+                "d1945": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d2020": {"niveau":4,"texte":"Slovaquie : L'avortement devient légal jusqu'à la 12e semaine de grossesse ou jusqu'à la 14e semaine d'absence de règles"}
             },
             "geometry": {
@@ -63074,6 +63081,7 @@
             "properties": {
                 "id":23,
                 "name": "Pologne",
+                "d1939": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1956": {"niveau":2,"texte":"Pologne - 27 Avril 1956 : La loi pour l'avortement est modifiée au niveau des conditions qui permettent d'y avoir accès."},
                 "d1993": {"niveau":3,"texte":"Pologne - Loi du 7 Janvier 1993 : Dans le planning familial, l'avortement est permis afin de protéger le foetus sous condition."},
                 "d2021": {"niveau":2,"texte":"Pologne - 27 Janvier 2021 : L'avortement est autorisé à condition que la grossesse résulte d'un acte criminel ou que la vie ou la santé de la mère soit en danger."}
