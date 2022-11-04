@@ -4,7 +4,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 1,
+                "id":1,
                 "name": "France",
                 "d1920": {"niveau":1,"texte":"France : loi qui interdit la contraception et l’avortement."},
                 "d1967": {"niveau":1,"texte":"France - loi Newirth : l’avortement, toujours considéré comme un crime, autorise la vente des contraceptifs en pharmacie sur ordonnance médicale et avec autorisation parentale pour les mineurs."},
@@ -11116,7 +11116,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 7,
+                "id":7,
                 "name": "Russie",
                 "d1920": {"niveau":4,"texte":"Russie : La République socialiste fédérative soviétique de Russie (RSFSR) a été le premier État au monde à légaliser l'interruption de grossesse."},
                 "d1936": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
@@ -41335,7 +41335,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 8,
+                "id":8,
                 "name": "Estonie",
                 "d1940": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1955": {"niveau":1,"texte":"Estonie : L'avortement est illégal depuis le 23 Novembre 1955 tandis que le territoire fait partie de l'Union soviétique."},
@@ -42148,7 +42148,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 9,
+                "id":9,
                 "name": "Norvège",
                 "d1960": {"niveau":3,"texte":"Norvège : L'avortement est légalisé mais aucune loi n'est promulguée."},
                 "d1964": {"niveau":3,"texte":"Norvège : La loi pour l'avortement passe. Ce dernier est autorisé uniquement si la mère est en danger et que la décison et prise par deux médecins."},
@@ -50231,7 +50231,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 10,
+                "id":10,
                 "name": "Lettonie",
                 "d1940": {"niveau":1,"texte":"Membre de l'URSS : Le gouvernement soviétique interdit l'accès à l'avortement sauf pour des raisons médicales approuvé par un comité de médecins."},
                 "d1955": {"niveau":3,"texte":"Lettonie : L’avortement est restreint de sorte qu’il ne peut être pratiqué que dans les trois premiers mois de la grossesse, à moins que l’accouchement ne mette la mère en danger. et seulement à l’hôpital."},
@@ -50809,7 +50809,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 11,
+                "id":11,
                 "name_fr": "Suède",
                 "d1938": {"niveau":4,"texte":"Suède : L'avortement thérapeutique est autorisé."},
                 "d1975":{"niveau":4,"texte":"Suède : Tout type d'interruption de grossesse est autorisé sans justification jusqu’à 18 semaines, cependant ce droit réservé aux suédoises."}
@@ -53219,7 +53219,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 12,
+                "id":12,
                 "name_fr": "Finlande",
                 "d1950": {"niveau":3,"texte":"Finlande : L'avortement est légalisé, cependant il n'est autorisé que dans le cadre d'un viol ou de malformation du foetus. Enfin il est permis dans d'autres cas mais reste restreint."}
             },
@@ -55340,7 +55340,7 @@
         {
             "type": "Feature",
             "properties": {
-                "id": 13,
+                "id":13,
                 "name": "Belgique",
                 "d1913": {"niveau":1,"texte":"Belgique : Dans le Code Pénal de 1867, l'avortement figure parmi les crimes  « contre l’ordre des familles et contre la moralité publique ». En 1913 Henry Carton de Wiart réalise un projet de loi finalement voté après la Première Guerre mondiale en 1923, destiné à punir les incitations à l'avortement ainsi que la propagande pour la contraception."},
                 "d1940": {"niveau":3,"texte":"Belgique :  Des avortements thérapeutiques ont lieu dans certains hôpitaux, tandis que d'autres sont pratiqués illégalement dans les années 1960 par certains plannings familiaux."},
