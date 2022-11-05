@@ -1,6 +1,8 @@
+//La majeur partie de ce code est une version adapté au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici: https://leafletjs.com/examples/choropleth/
+//La base de donnée Geojson à été quand à elle tirée de ce site créer par @ashkyd https://geojson-maps.ash.ms/ qui permet de générer des fichier geojson avec les coordonnées des pays sélectionnés
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
-
+var geojson;
 
 document.querySelector("#fader").addEventListener("click", ()=> {
     console.log("click")
@@ -8,6 +10,17 @@ document.querySelector("#fader").addEventListener("click", ()=> {
         layer.setStyle(styleupdate(layer.feature))
     }); 
 });
+
+function onEachFeature(feature, layer) {
+    layer.on({
+        click: afficheTexte
+    });
+    console.log("hi")
+}
+
+function afficheTexte(){
+    
+}
 
 //fonction pour le curseur
 function rangeSlide(value) {
@@ -52,24 +65,6 @@ function style(niveau) {
     };
 }
 
-function highlightFeature(e) {
-    var layer = e.target;
-    layer.setStyle({
-        weight: 5,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.7
-    });
-
-    if (!L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-}
-
-function resetHighlight(e) {
-    geojson.resetStyle(e.target);
-}
-
 //affiche la carte
 const legend = L.control({position: 'bottomleft'});
 
@@ -81,6 +76,10 @@ $.getJSON(mapEurope,function(data){
     }).addTo(map);
     geojsoncouche = L.geoJson(data, {clickable: false , style: style}).addTo(map); 
     legend.addTo(map);
+    geojson = L.geoJson(data, {
+        style: style,
+        onEachFeature: onEachFeature
+    }).addTo(map);
 })
 
 //affiche la légende
