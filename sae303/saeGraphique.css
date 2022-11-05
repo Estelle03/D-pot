@@ -2,9 +2,17 @@
     box-sizing: border-box;
 }
 
-/* body {
+html{
     height: 100vh;
-} */
+}
+
+}
+
+body {
+    background: #B399FF;
+    margin: 0;
+    height: 100%;
+}
 
 #map {
     border: black solid 1px;
@@ -24,11 +32,7 @@
     height: 40px;
     border-radius: 40px;
     text-align: center;
-}
 
-body {
-    background: white;
-}
 
 .slider {
     position: absolute;
@@ -85,6 +89,8 @@ body {
 
 h1 {
     text-align: center;
+    color: #333333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #rouge {
