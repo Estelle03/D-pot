@@ -5,8 +5,7 @@ let geojsoncouche = null;
 var geojson;
 
 document.querySelector("#fader").addEventListener("click", ()=> {
-    console.log("click")
-    geojsoncouche.eachLayer(function (layer) {
+        geojsoncouche.eachLayer(function (layer) {
         layer.setStyle(styleupdate(layer.feature))
     }); 
 });
@@ -17,6 +16,9 @@ function onEachFeature(feature, layer) {
     });
 }
 
+document.querySelector("#map").addEventListener("click", ()=>{
+    
+})
 function afficheTexte(feature){
     console.log("click sur",feature.properties.name)
     const valeurCurseur = document.querySelector("#fader").value;
@@ -97,7 +99,6 @@ $.getJSON(mapEurope,function(data){
 
 //affiche la légende
 legend.onAdd = function (map) {
-    console.log("fonction")
     var div = L.DomUtil.create('div', 'info legend'),
         level = [0, 1, 2, 3, 4];
         text = ["Pas de données","Illégal","Illégal sauf conditions (danger, viol, inceste)","Légal sous conditions (santé, économie, statut social)","Légal sans conditions (en fonction des délais)"];
