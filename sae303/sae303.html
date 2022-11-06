@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@0;1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
     <link rel="stylesheet" href="saeGraphique.css">
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" defer></script>
@@ -16,17 +17,21 @@
 </head>
 <body>
     <h1>Évolution du droit à l'avortement en Europe</h1>
-    <a id="information" href="PageInformations.html">i</a>
-
-    <div id="map" style="width: 60vw; height: 40vw;"></div>
-
-    <label class="slider">
-        <div id="cursorSlide">Dates : <span id="rangeValue">1910</span></div>
-        <input id="fader" type="range" min="1910" max="2025" step="1" value="0"  onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
-    </label>
-    <section><p class="explication">
-
-    </p></section>
+    <div class="parent">
+        <div id="information">
+            <p>Nous avons décider de traiter un sujet qui touche toutes les femmes dans le monde. A l'échelle de l'Europe découvrez les différentes législations établies par les goouvernements depuis 1910 jusqu'à aujourd'hui. Pour en savoir plus sur la réalisation de ce projet cliquez <a href="PageInformations.html">ici</a></p>
+        </div>
+        <div id="map" style="width: 60vw; height: 40vw;">
+        </div>
+        <div id="slide">
+            <label class="slider">
+                <div id="cursorSlide">Dates : <span id="rangeValue">1910</span></div>
+                <input id="fader" type="range" min="1910" max="2025" step="1" value="0"  onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+            </label>
+        </div>
+        <div id="explication">
+            <p>blablabla</p>
+        </div>
     </div>
 </body>
 </html>
