@@ -17,8 +17,12 @@ function onEachFeature(feature, layer) {
     });
 }
 
-function afficheTexte(){
+function afficheTexte(feature){
+    console.log("click sur",feature.properties.name)
+    const valeurCurseur = document.querySelector("#fader").value;
+    document.querySelector("#explication.p").textContent = feature.properties["d"+valeurCurseur]
     console.log("hi")
+    console.log(feature.properties.d1920.texte)//["d"+valeurCurseur])
 }
 
 //fonction pour le curseur
