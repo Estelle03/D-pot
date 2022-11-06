@@ -15,11 +15,10 @@ function onEachFeature(feature, layer) {
     layer.on({
         click: afficheTexte
     });
-    console.log("hi")
 }
 
 function afficheTexte(){
-    
+    console.log("hi")
 }
 
 //fonction pour le curseur
@@ -65,6 +64,16 @@ function style(niveau) {
     };
 }
 
+function nostyle(){
+    return {
+        fillColor: 'rgba(255, 255, 255, 0)',
+        weight: 0,
+        opacity: 0,
+        color: 'rgba(255, 255, 255, 0)',
+        dashArray: '',
+        fillOpacity: 0
+    };
+}
 //affiche la carte
 const legend = L.control({position: 'bottomleft'});
 
@@ -77,7 +86,7 @@ $.getJSON(mapEurope,function(data){
     geojsoncouche = L.geoJson(data, {clickable: false , style: style}).addTo(map); 
     legend.addTo(map);
     geojson = L.geoJson(data, {
-        style: style,
+        style: nostyle,
         onEachFeature: onEachFeature
     }).addTo(map);
 })
