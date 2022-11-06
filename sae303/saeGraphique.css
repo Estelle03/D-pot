@@ -16,6 +16,7 @@ h1 {
     text-align: center;
     color: #f4effa;
     font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.5px;
 }
 .parent {
     display: grid;
