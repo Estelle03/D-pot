@@ -6,94 +6,100 @@ html{
     height: 100vh;
 }
 
-}
-
 body {
-    background: #B399FF;
+    background: #2f184b;
     margin: 0;
     height: 100%;
 }
 
-#map {
-    border: black solid 1px;
-    position: absolute;
-    left: 30%;
-}
-#information{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: 900;
-    background-color: rgb(195, 195, 195);
-    color: #0c0c0c;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    text-align: center;
-
-
-.slider {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 150px;
-    padding: 20px;
-    padding-left: 40px;
-    background: #fcfcfc;
-    border: black solid 1px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* box-shadow: 0px 15px 40px #7E6D5766; */
-}
-
-.slider label {
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 10px;
-    /* color: black; */
-    font-size: 5em;
-    color: #999;
-    font-weight: 400;
-}
-
-.slider input[type="range"] {
-    width: 520px;
-    height: 20px;
-    border: 1px;
-    outline: none;
-}
-
-#rangeValue {
-    position: relative;
-    top: 0%;
-    display: block;
-    text-align: center;
-    font-size: 6em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(17, 16, 16);
-    font-weight: 400;
-}
-
-#cursorSlide{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 h1 {
     text-align: center;
-    color: #333333;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #f4effa;
+    font-family: 'Abril Fatface', cursive;
 }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 100%;
+    justify-content: auto;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    }
+    #information {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #f4effa;
+    text-align: center;
+    }
+    a{
+        color:#f4effa;
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: #9b72cf;
+    }
+    #map {
+        grid-area: 2 / 1 / 4 / 2; 
+        border: black 1px solid;
+        position: absolute;
+        top: 28%;
+    }
+    #slide { grid-area: 2 / 2 / 3 / 3; 
+        z-index: 2;
+    }
+    .slider {
+        /*position: absolute;*/
+        transform: translate(50%, -250%);
+        padding : 5%;
+        max-width: 300px;
+        background: #f4effa;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*.slider input[type="range"] {
+        outline: none;
+    }*/
+    #rangeValue {
+        position: relative;
+        top: 0%;
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Lato', sans-serif;
+        color: #2f184b;
+        font-weight: 400;
+    }
+    #cursorSlide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #explication { 
+        grid-area: 3 / 2 / 4 / 3; 
+        border: black 1px solid;
+        transform: translate(70%, -950%);
+        max-width: 240px;
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* max-width: 220px; */
+        /* border-radius: 20px; */
+        
+    }
+    p{
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        color: #f4effa;
+    }
 
-#rouge {
+#rouge { 
     width: 50px;
     height: 50px;
     background-color: #E32932;
@@ -147,28 +153,22 @@ nav {
     display: flex;
     flex-direction: row;
     height: 50px;
-    height: 50px;
-}
-
-p {
-    font-size: 1.2em;
 }
 
 .info {
     padding: 6px 8px;
-    font: 14px/16px Arial, Helvetica, sans-serif;
-    background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background: #f1ecf5c3;
+    box-shadow: #c8b1e4 1px 1px 0 0 ;
     border-radius: 5px;
 }
 .info h4 {
     margin: 0 0 5px;
-    color: #777;
 }
 .legend {
-    line-height: 18px;
-    color: #555;
+    color: #2f184b;
+    font-family: 'Open Sans', sans-serif;
 }
 .legend i {
     width: 18px;
