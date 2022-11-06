@@ -50,12 +50,13 @@ h1 {
         position: absolute;
         top: 28%;
     }
-    #slide { grid-area: 2 / 2 / 3 / 3; 
+    #slide { 
+        grid-area: 2 / 2 / 3 / 3; 
         z-index: 2;
+        transform: translate(50%, -250%);
     }
     .slider {
         /*position: absolute;*/
-        transform: translate(50%, -250%);
         padding : 5%;
         max-width: 300px;
         background: #f4effa;
@@ -85,7 +86,7 @@ h1 {
     #explication { 
         grid-area: 3 / 2 / 4 / 3; 
         border: black 1px solid;
-        transform: translate(70%, -950%);
+        transform: translate(70%, -930%);
         max-width: 240px;
         display: flex;
         /* flex-direction: column; */
