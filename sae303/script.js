@@ -25,11 +25,11 @@ document.querySelector("#map").addEventListener("click", ()=>{
 
 })
 function afficheTexte(feature){
-    document.querySelector("#explication").textContent = "";
+    document.querySelector("#explication p").textContent = "";
     console.log("click sur",feature.properties.name);
     const valeurCurseur = document.querySelector("#fader").value;
-    console.log(document.querySelector("#explication"));
-    document.querySelector("#explication").textContent = feature.properties["d"+valeurCurseur].texte;
+    console.log(document.querySelector("#explication p"));
+    document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
     console.log("hi");
     console.log(feature.properties["d"+valeurCurseur].texte);
 }
@@ -111,8 +111,8 @@ legend.onAdd = function (map) {
     return div;
 };
 
-geojsoncouche.eachLayer(function (layer) {
+/* geojsoncouche.eachLayer(function (layer) {
     layer.setStyle(styleupdate(layer.feature))
-});
+}); */
 
-document.querySelector("#fader").value = 1910;
+/* document.querySelector("#fader").value = 1910; */
