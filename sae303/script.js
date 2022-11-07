@@ -16,12 +16,9 @@ function rangeSlide(value) {
 }
 
 function afficheTexte(feature){
-    console.log(feature)
     document.querySelector("#explication p").textContent = "";
     let valeurCurseur = document.querySelector("#fader").value;
-    console.log(valeurCurseur)
     valeurCurseur = testAfficheText(valeurCurseur,feature);
-    console.log(valeurCurseur)
     document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
 }
 function testAfficheText(valeurCurseur,feature){
