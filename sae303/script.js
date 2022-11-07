@@ -1,5 +1,5 @@
 //La majeur partie de ce code est une version adapté au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici: https://leafletjs.com/examples/choropleth/
-//La base de donnée Geojson à été quand à elle tirée de ce site créer par @ashkyd https://geojson-maps.ash.ms/ qui permet de générer des fichier geojson avec les coordonnées des pays sélectionnés
+//La base de donnée Geojson à été quand à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichier geojson avec les coordonnées des pays sélectionnés
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
 var geojson;
@@ -10,26 +10,28 @@ document.querySelector("#fader").addEventListener("click", ()=> {
     }); 
 });
 
+//fonction pour le curseur
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value;
+}
+
 function onEachFeature(feature, layer) {
     layer.on({
-        click: afficheTexte
+        click: afficheTexte(feature)
     });
 }
 
 document.querySelector("#map").addEventListener("click", ()=>{
-    
+
 })
 function afficheTexte(feature){
-    console.log("click sur",feature.properties.name)
+    document.querySelector("#explication").textContent = "";
+    console.log("click sur",feature.properties.name);
     const valeurCurseur = document.querySelector("#fader").value;
-    document.querySelector("#explication.p").textContent = feature.properties["d"+valeurCurseur]
-    console.log("hi")
-    console.log(feature.properties.d1920.texte)//["d"+valeurCurseur])
-}
-
-//fonction pour le curseur
-function rangeSlide(value) {
-    document.getElementById('rangeValue').innerHTML = value;
+    console.log(document.querySelector("#explication"));
+    document.querySelector("#explication").textContent = feature.properties["d"+valeurCurseur].texte;
+    console.log("hi");
+    console.log(feature.properties["d"+valeurCurseur].texte);
 }
 
 function styleupdate(features){
@@ -89,12 +91,12 @@ $.getJSON(mapEurope,function(data){
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    geojsoncouche = L.geoJson(data, {clickable: false , style: style}).addTo(map); 
+    geojsoncouche = L.geoJson(data, {clickable: true , /* click: afficheTexte , */ style: style}).addTo(map); 
     legend.addTo(map);
-    geojson = L.geoJson(data, {
+    /* geojson = L.geoJson(data, {
         style: nostyle,
         onEachFeature: onEachFeature
-    }).addTo(map);
+    }).addTo(map); */
 })
 
 //affiche la légende
@@ -108,3 +110,9 @@ legend.onAdd = function (map) {
     }
     return div;
 };
+
+geojsoncouche.eachLayer(function (layer) {
+    layer.setStyle(styleupdate(layer.feature))
+});
+
+document.querySelector("#fader").value = 1910;
