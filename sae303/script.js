@@ -16,13 +16,18 @@ function rangeSlide(value) {
 }
 
 function afficheTexte(feature){
-    document.querySelector("#explication p").textContent = "";
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
-    document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
+    if(valeurCurseur>=1912){
+        document.querySelector("#explication p").textContent = "";
+        document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
+    }
+    else{
+        document.querySelector("#explication p").textContent = "Cliquez sur un pays coloré pour obtenir plus d'information";
+    }
 }
 function testAfficheText(valeurCurseur,feature){
-    while (valeurCurseur>=1913){
+    while (valeurCurseur>=1912){
         if(feature.properties["d"+valeurCurseur]!=undefined){
             return valeurCurseur
         } else {
