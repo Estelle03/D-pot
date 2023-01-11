@@ -15,25 +15,27 @@ function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
 }
 
-function onEachFeature(feature, layer) {
-    layer.on({
-        click: afficheTexte(feature)
-    });
-}
-
-document.querySelector("#map").addEventListener("click", ()=>{
-
-})
 function afficheTexte(feature){
-    document.querySelector("#explication p").textContent = "";
-    console.log("click sur",feature.properties.name);
-    const valeurCurseur = document.querySelector("#fader").value;
-    console.log(document.querySelector("#explication p"));
-    document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
-    console.log("hi");
-    console.log(feature.properties["d"+valeurCurseur].texte);
+    let valeurCurseur = document.querySelector("#fader").value;
+    valeurCurseur = testAfficheText(valeurCurseur,feature);
+    if(valeurCurseur>=1912){
+        document.querySelector("#explication p").textContent = "";
+        document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
+    }
+    else{
+        document.querySelector("#explication p").textContent = "Cliquez sur un pays coloré pour obtenir plus d'information";
+    }
 }
-
+function testAfficheText(valeurCurseur,feature){
+    while (valeurCurseur>=1912){
+        if(feature.properties["d"+valeurCurseur]!=undefined){
+            return valeurCurseur
+        } else {
+            valeurCurseur= valeurCurseur-1
+        }
+    }
+}
+ 
 function styleupdate(features){
     let valueCurseur = document.querySelector("#fader").value;
     while (valueCurseur>=1913){
@@ -72,6 +74,19 @@ function style(niveau) {
     };
 }
 
+//stylise les bordures lors du passage du hover
+function hoverstyle(niveau) {
+    return{
+        fillColor: ColorLevel(niveau),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0
+    }
+}
+
+
 function nostyle(){
     return {
         fillColor: 'rgba(255, 255, 255, 0)',
@@ -82,21 +97,19 @@ function nostyle(){
         fillOpacity: 0
     };
 }
+
 //affiche la carte
 const legend = L.control({position: 'bottomleft'});
-
 $.getJSON(mapEurope,function(data){
     var map = L.map('map').setView([58, 20], 3);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    geojsoncouche = L.geoJson(data, {clickable: true , /* click: afficheTexte , */ style: style}).addTo(map); 
+    console.log(data)
+    geojsoncouche = L.geoJson(data, {clickable: false, style: style}).addTo(map);
     legend.addTo(map);
-    /* geojson = L.geoJson(data, {
-        style: nostyle,
-        onEachFeature: onEachFeature
-    }).addTo(map); */
+    geojson = L.geoJson(data, {style: hoverstyle, onEachFeature: onEachFeature}).addTo(map);
 })
 
 //affiche la légende
@@ -109,10 +122,37 @@ legend.onAdd = function (map) {
             '<i style="background:' + ColorLevel(level[i]) + '"></i> ' + text[i] + "</br>";
     }
     return div;
-};
+}
 
-/* geojsoncouche.eachLayer(function (layer) {
-    layer.setStyle(styleupdate(layer.feature))
-}); */
+function highlightFeature(e) {
+    var layer = e.target;
+    
+    layer.setStyle({
+        weight: 5,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0
+    });
 
-/* document.querySelector("#fader").value = 1910; */
+    layer.bringToFront();
+    /* info.update(layer.feature.properties); */
+}
+
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+    /* info.update(); */
+}
+
+function zoomToFeature(e) {
+    var layer = e.target
+    /* console.log(layer.feature) */
+    afficheTexte(layer.feature)
+}
+
+function onEachFeature(features, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+}
