@@ -6,10 +6,15 @@ var geojson;
 // Initialisation du pays choisi (pas encore choisi)
 var layer = null;
 
-document.querySelector("#fader").addEventListener("click", ()=> {
-        geojsoncouche.eachLayer(function (layer) {
+function coloreCarte(){
+    geojsoncouche.eachLayer(function(layer){
         layer.setStyle(styleupdate(layer.feature))
     }); 
+};
+
+document.querySelector("#fader").addEventListener("change", ()=> {
+    rangeSlide(document.querySelector("#fader").value)
+    coloreCarte();
 });
 
 //fonction pour le curseur
@@ -115,6 +120,10 @@ $.getJSON(mapEurope,function(data){
     geojsoncouche = L.geoJson(data, {clickable: false, style: style}).addTo(map);
     legend.addTo(map);
     geojson = L.geoJson(data, {style: hoverstyle, onEachFeature: onEachFeature}).addTo(map);
+    // Initialiser à l'année 2022
+    document.querySelector("#fader").value = 2022;
+    // Simuler le clic sur l'outil de choix de date
+    document.querySelector("#fader").dispatchEvent(new Event("change"));
 })
 
 //affiche la légende
