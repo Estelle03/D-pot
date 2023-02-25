@@ -1,37 +1,47 @@
-//La majeur partie de ce code est une version adapté au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici: https://leafletjs.com/examples/choropleth/
-//La base de donnée Geojson à été quand à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichier geojson avec les coordonnées des pays sélectionnés
+//La majeure partie de ce code est une version adapté au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici : https://leafletjs.com/examples/choropleth/
+//La base de données Geojson a été quant à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichiers geojson avec les coordonnées des pays sélectionnés
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
 var geojson;
+// Initialisation du pays choisi (pas encore choisi)
+var layer = null;
 
-document.querySelector("#fader").addEventListener("click", ()=> {
-        geojsoncouche.eachLayer(function (layer) {
+function coloreCarte(){
+    geojsoncouche.eachLayer(function(layer){
         layer.setStyle(styleupdate(layer.feature))
     }); 
+};
+
+document.querySelector("#fader").addEventListener("change", ()=> {
+    rangeSlide(document.querySelector("#fader").value)
+    coloreCarte();
 });
 
 //fonction pour le curseur
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
+    if(layer != null){
+        // Mise à jour du texte affiché en fonction du pays choisi
+        afficheTexte(layer.feature);
+    };
 }
 
 function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
-    if(valeurCurseur>=1912){
-        document.querySelector("#explication p").textContent = "";
-        document.querySelector("#explication p").textContent = feature.properties["d"+valeurCurseur].texte;
+    if(valeurCurseur >= 1912){
+        document.querySelector("#explication p").innerHTML = "<strong>Depuis " + valeurCurseur + "</strong><br>" + feature.properties["d"+valeurCurseur].texte;
     }
     else{
-        document.querySelector("#explication p").textContent = "Cliquez sur un pays coloré pour obtenir plus d'information";
+        document.querySelector("#explication p").innerHTML = "Cliquez sur un pays coloré pour obtenir plus d'informations.";
     }
 }
 function testAfficheText(valeurCurseur,feature){
-    while (valeurCurseur>=1912){
+    while (valeurCurseur >= 1912){
         if(feature.properties["d"+valeurCurseur]!=undefined){
-            return valeurCurseur
+            return valeurCurseur;
         } else {
-            valeurCurseur= valeurCurseur-1
+            valeurCurseur= valeurCurseur-1;
         }
     }
 }
@@ -110,6 +120,10 @@ $.getJSON(mapEurope,function(data){
     geojsoncouche = L.geoJson(data, {clickable: false, style: style}).addTo(map);
     legend.addTo(map);
     geojson = L.geoJson(data, {style: hoverstyle, onEachFeature: onEachFeature}).addTo(map);
+    // Initialiser à l'année 2022
+    document.querySelector("#fader").value = 2022;
+    // Simuler le clic sur l'outil de choix de date
+    document.querySelector("#fader").dispatchEvent(new Event("change"));
 })
 
 //affiche la légende
@@ -144,7 +158,7 @@ function resetHighlight(e) {
 }
 
 function zoomToFeature(e) {
-    var layer = e.target
+    layer = e.target;
     /* console.log(layer.feature) */
     afficheTexte(layer.feature)
 }
