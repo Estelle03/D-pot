@@ -147,6 +147,23 @@ nav {
     margin-right: 8px;
     opacity: 0.7;
 }
+
+<!-- infos projet -->
+
+    .info{
+        position: relative;
+        background-color: #c5e8ff;
+        border-radius: 20px;
+        margin: 2% 5% 0% 5%;
+        padding: 1% 5%;
+        font-family:  'Catamaran', sans-serif;
+    }
+    ul{
+        list-style-type: none;
+      }
+
+
+<!-- RESPONSIVE -->
 @media (max-width: 700px) {
     
     #logo{
