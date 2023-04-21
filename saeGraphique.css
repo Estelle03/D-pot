@@ -157,11 +157,13 @@ nav {
         margin: 2% 5% 0% 5%;
         padding: 1% 5%;
         font-family:  'Catamaran', sans-serif;
-        color:black;
     }
     ul{
         list-style-type: none;
       }
+    .concept>p{
+        color:black;
+    }
 
 
 /* RESPONSIVE */
