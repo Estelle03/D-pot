@@ -168,6 +168,9 @@ nav {
         color:black;
         text-decoration:underline;
     }
+.concept>p>a:hover{
+    color: ##2f184b;
+}
 
 
 /* RESPONSIVE */
