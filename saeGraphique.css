@@ -31,10 +31,10 @@ h1 {
     height: 90vh;
     max-width: 80vw;
     margin: 0 20px;
-    display: grid;
+    display: flex;
     gap: 20px 50px;
-    grid-template-columns: 45vw 45vw;
-    grid-template-rows: 10% 70%;
+    /*grid-template-columns: 45vw 45vw;
+    grid-template-rows: 10% 70%;*/
     justify-content: auto;
     align-items: center;
 }
@@ -68,13 +68,13 @@ a:hover {
 #slide {
     grid-area: 2 / 2 / 3 / 3;
     height: 100%;
-    display: grid;
+    display: flex;
     align-content: space-around;
     justify-content: start;
 }
 
 .slider {
-    grid-area:2/2/3/3;
+    /*grid-area:2/2/3/3;*/
     transform: translate(50%, -250%);
     width: 300px;
     background: #f4effa;
@@ -104,7 +104,7 @@ a:hover {
 }
 
 #explication {
-    grid-area: 2 / 2 / 3 / 3;
+    /*grid-area: 2 / 2 / 3 / 3;*/
     padding: 5%;
     /* width: 100%; */
 }
@@ -204,10 +204,10 @@ nav {
     }
 
     #slide {
-        grid-area: 3 / 1 / 4 / 2;
+        /*grid-area: 3 / 1 / 4 / 2;*/
         height: 100%;
         /* display: none; */
-        /* display: flex; */
+        display: flex;
         align-self: center;
         justify-self: center;
         margin-top: 500px;
@@ -216,7 +216,7 @@ nav {
     }
     
     .slider {
-        grid-area: 5 / 1 / 6 /2;
+        /*grid-area: 5 / 1 / 6 /2;*/
         transform: translate(50%, -250%);
         width: 300px;
         background: #f4effa;
@@ -246,7 +246,7 @@ nav {
     }
     
     #explication {
-        grid-area: 4 / 1 / 5 / 2;
+        /*grid-area: 4 / 1 / 5 / 2;*/
         padding: 5%;
         text-align: center;
 
