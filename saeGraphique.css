@@ -172,6 +172,9 @@ nav {
     color: ##2f184b;
 }
 
+footer{
+    height:35px;
+}
 
 /* RESPONSIVE */
 @media (max-width: 700px) {
