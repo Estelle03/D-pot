@@ -32,6 +32,7 @@ h1 {
     max-width: 80vw;
     margin: 0 20px;
     display: flex;
+    flex-direction: column;
     gap: 20px 50px;
     /*grid-template-columns: 45vw 45vw;
     grid-template-rows: 10% 70%;*/
@@ -40,7 +41,7 @@ h1 {
 }
 
 #information {
-    grid-area: 1 / 1 / 2 / 3;
+    /*grid-area: 1 / 1 / 2 / 3;*/
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
     color: #f4effa;
@@ -58,7 +59,7 @@ a:hover {
 }
 
 #map {
-    grid-area: 2 / 1 / 3 / 2;
+    /*grid-area: 2 / 1 / 3 / 2;*/
     border: black 1px solid;
     width: 45vw;
     height: 40%;
@@ -66,7 +67,7 @@ a:hover {
 }
 
 #slide {
-    grid-area: 2 / 2 / 3 / 3;
+    /*grid-area: 2 / 2 / 3 / 3;*/
     height: 100%;
     display: flex;
     align-content: space-around;
