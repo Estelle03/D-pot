@@ -52,7 +52,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: ##2f184b;
+    color: #2f184b;
 }
 
 #map {
@@ -169,7 +169,7 @@ nav {
         text-decoration:underline;
     }
 .concept>p>a:hover{
-    color: ##2f184b;
+    color: #2f184b;
 }
 
 footer{
@@ -212,10 +212,10 @@ footer{
         align-items:center;
     }
     
-    .slider {
-        /*grid-area: 5 / 1 / 6 /2;*/
+    /*.slider {
+        grid-area: 5 / 1 / 6 /2;
         
-    }
+    }*/
     #rangeValue {
         position: relative;
         top: 0%;
