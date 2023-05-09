@@ -27,7 +27,7 @@ h1 {
 }
 
 .parent {
-    margin: 0 20px;
+    margin: 80px 20px;
     display: flex;
     flex-direction: row;
     gap: 45px;
@@ -108,7 +108,7 @@ a:hover {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
     color: #f4effa;
     /* width: 100%; */
