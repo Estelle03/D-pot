@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background: #2f184b;
+    background-image: none;
     margin: 0;
     height: 100%;
 }
@@ -255,3 +255,47 @@ footer{
         padding: 1% 2%;
         font-family:  'Catamaran', sans-serif;
     }
+
+/*TEST VOLET DEROULANT*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    /* position: relative; */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+    position: relative;
+    background-color: #c5e8ff;
+    border-radius: 10px;
+    margin: 2% 5% 0% 5%;
+    padding: 1% 2%;
+    font-family:  'Catamaran', sans-serif;
+}
