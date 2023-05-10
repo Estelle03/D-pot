@@ -249,3 +249,11 @@ footer{
         width: 200px;
     }
   }
+.concept{
+        position: relative;
+        background-color: #c5e8ff;
+        border-radius: 10px;
+        margin: 2% 5% 0% 5%;
+        padding: 1% 2%;
+        font-family:  'Catamaran', sans-serif;
+    }
