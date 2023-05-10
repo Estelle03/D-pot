@@ -203,7 +203,7 @@ footer{
     }
 
     #slide {
-        /*width: 90%;*/
+        width: 90vw;
         display: flex;
         align-self: center;
         justify-self: center;
@@ -235,13 +235,11 @@ footer{
         height: 100px;
         background-color: #f4effa;
         border-radius: 20px;
-        width: 500px;
     
     }
     
     #explication {
-        /*grid-area: 4 / 1 / 5 / 2;*/
-        padding: 5%;
+        padding: 1%;
         text-align: center;
 
     }
