@@ -5,15 +5,31 @@
 html {
     height: 100vh;
 }
-
 body {
-    background-image: url('img/bg.png');
+    background-image: url('img/bg.png'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 0;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 main{
     padding:15px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2f184b;
+    /* border-radius: 8px; */
+}
+
+
 #logo {
     width: 5%;
     position: absolute ;
