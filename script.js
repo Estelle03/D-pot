@@ -1,11 +1,14 @@
-//La majeure partie de ce code est une version adapté au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici : https://leafletjs.com/examples/choropleth/
-//La base de données Geojson a été quant à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichiers geojson avec les coordonnées des pays sélectionnés
+//La majeure partie de ce code est une version adaptée au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici : https://leafletjs.com/examples/choropleth/
+//La base de données Geojson a été quant à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichiers geo.json avec les coordonnées des pays sélectionnés
+
+
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
 var geojson;
 // Initialisation du pays choisi (pas encore choisi)
 var layer = null;
 
+//Fonction qui initialise les couleurs de la carte
 function coloreCarte(){
     geojsoncouche.eachLayer(function(layer){
         layer.setStyle(styleupdate(layer.feature))
@@ -17,7 +20,7 @@ document.querySelector("#fader").addEventListener("change", ()=> {
     coloreCarte();
 });
 
-//fonction pour le curseur
+//Fonction qui gère le curseur
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
     if(layer != null){
@@ -26,6 +29,7 @@ function rangeSlide(value) {
     };
 }
 
+//Fonction qui affiche le texte correspondant au pays et à la date choisie
 function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
@@ -36,6 +40,7 @@ function afficheTexte(feature){
         document.querySelector("#explication p").innerHTML = "Cliquez sur un pays coloré pour obtenir plus d'informations.";
     }
 }
+//Fonction qui teste si un texte est disponible à la date choisie, sinon il retourne la date du texte antérieur, et s'il n'y en a aucun alors il retourne 1912 la date la plus ancienne
 function testAfficheText(valeurCurseur,feature){
     while (valeurCurseur >= 1912){
         if(feature.properties["d"+valeurCurseur]!=undefined){
@@ -45,7 +50,8 @@ function testAfficheText(valeurCurseur,feature){
         }
     }
 }
- 
+
+//Fonction qui met a jour les couleur des pays en fonction de leurs indicateur à la date sélectionnée par le curseur
 function styleupdate(features){
     let valueCurseur = document.querySelector("#fader").value;
     while (valueCurseur>=1913){
@@ -59,20 +65,21 @@ function styleupdate(features){
     return {fillColor: ColorLevel(0)}
     }
 
-//attribut une couleur en fonction du niveau de l'indicateur
+//Fonction qui renvoie une couleur en fonction du niveau de l'indicateur
 function ColorLevel(niveau) {
     if(niveau<=4){
         const tabColor = ["#b0b0b0","#E32932","#BE95C4","#F6AA1C","#5A90D6"];
         return tabColor[niveau];
     } else if (niveau>4){
-        console.log("t'as fumer quoi? y'a 4 niveau patate")
+        console.log("erreure de saisit dans la base de donnée, niveau trop élevé : "+niveau);
     }
     else {
+        console.log("probable erreure de saisit dans la base de donnée, niveau trop faible : "+niveau);
         return "#b0b0b0";
     }
 };
 
-//ajoute la couleur au pays
+//attribue le style au pays
 function style(niveau) {
     return {
         fillColor: ColorLevel(niveau),
@@ -84,7 +91,7 @@ function style(niveau) {
     };
 }
 
-//stylise les bordures lors du passage du hover
+//stylise les bordures lors du passage du curseur
 function hoverstyle(niveau) {
     return{
         fillColor: ColorLevel(niveau),
@@ -96,7 +103,7 @@ function hoverstyle(niveau) {
     }
 }
 
-
+//supprime le style du pays
 function nostyle(){
     return {
         fillColor: 'rgba(255, 255, 255, 0)',
