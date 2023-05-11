@@ -1,12 +1,35 @@
 //La majeure partie de ce code est une version adaptée au projet Dataviz du tutoriel Interactive Choropleth Map du site leafletjs.com de Volodymyr Agafonkin que vous pouvez trouver ici : https://leafletjs.com/examples/choropleth/
 //La base de données Geojson a été quant à elle tirée de ce site https://geojson-maps.ash.ms/ créé par @ashkyd qui permet de générer des fichiers geo.json avec les coordonnées des pays sélectionnés
 
-
 const mapEurope = 'custom.geo.json';
 let geojsoncouche = null;
 var geojson;
 // Initialisation du pays choisi (pas encore choisi)
 var layer = null;
+
+//Tableau de liens pour les sources
+const Sources = [
+    {
+        "lien":"#",
+        "nom":"Source manquante"
+    },
+    {
+        "lien":"https://www.femmeactuelle.fr/sante/sante-pratique/droit-avortement-en-france-histoire-d-un-combat-2047911",
+        "nom":"Droit à l’avortement en France, l’histoire du combet - Femme Actuelle"
+    },
+    {
+        "lien":"https://fr.wikipedia.org/wiki/Droit_de_l%27avortement#:~:text=13%20d%C3%A9cembre%202018.-,Islande,tout%20moment%20de%20la%20grossesse",
+        "nom":"Droit de l’avortement - Wikipédia"
+    },
+    {
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Irlande_(pays)",
+        "nom":"Avortement en Irlande - Wikipédia"
+    },
+    {
+        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
+        "nom":"Avortement à l’étranger - Ooreka"
+    }
+]
 
 //Fonction qui initialise les couleurs de la carte
 function coloreCarte(){
@@ -34,8 +57,18 @@ function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
     if(valeurCurseur >= 1912){
-        document.querySelector("#explication p").innerHTML = "<strong>Depuis " + valeurCurseur + "</strong><br>" + feature.properties["d"+valeurCurseur].texte;
-    }
+        console.log(feature.properties["d"+valeurCurseur].link.numero)
+        document.querySelector("#explication p").innerHTML = "<strong>Depuis " 
+        + valeurCurseur 
+        + "</strong><br>" 
+        + feature.properties["d"+valeurCurseur].texte
+        + "<br>"
+        + "Sources : <a href='" 
+        + Sources[feature.properties["d"+valeurCurseur].link.numero].lien 
+        + "'>" 
+        + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
+        + "</a>"; 
+    } 
     else{
         document.querySelector("#explication p").innerHTML = "Cliquez sur un pays coloré pour obtenir plus d'informations.";
     }
