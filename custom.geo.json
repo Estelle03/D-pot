@@ -14860,9 +14860,9 @@
             "properties": {
                 "id": 16,
                 "name": "Albanie",
-                "d1989": {"niveau":3,"texte":"Albanie :  L’avortement est autorisé si la mère est âgée de moins de 16 ans, si la grossesse est issue d’un viol ou d’un inceste."},
-                "d1991": {"niveau":2,"texte":"Albanie : L’avortement est autorisé si un médecin établit qu’il s’agit de la meilleure solution selon la situation."},
-                "d1995": {"niveau":4,"texte":"Albanie - 7 décembre 1995 : L’avortement est légalisé."}
+                "d1989": {"niveau":3,"texte":"Albanie :  L’avortement est autorisé si la mère est âgée de moins de 16 ans, si la grossesse est issue d’un viol ou d’un inceste.", "link": {"numero":53}},
+                "d1991": {"niveau":2,"texte":"Albanie : L’avortement est autorisé si un médecin établit qu’il s’agit de la meilleure solution selon la situation.", "link": {"numero":53}},
+                "d1995": {"niveau":4,"texte":"Albanie - 7 décembre 1995 : L’avortement est légalisé.", "link": {"numero":53}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -14991,8 +14991,8 @@
             "properties": {
                 "id": 18,
                 "name": "Danemark",
-                "d1939": {"niveau":3,"texte":"Danemark : L’avortement est légalisé mais n’est autorisé que dans certains cas ; si la grossesse présente des risques de malformation du fœtus, un danger pour la vie ou la santé de la mère ou si la grossesse est issue d’un viol."},
-                "d1973": {"niveau":4,"texte":"Danemark : Une loi autorisant l’avortement libre et gratuit jusqu’à la 12e semaine de grossesse."}
+                "d1939": {"niveau":3,"texte":"Danemark : L’avortement est légalisé mais n’est autorisé que dans certains cas ; si la grossesse présente des risques de malformation du fœtus, un danger pour la vie ou la santé de la mère ou si la grossesse est issue d’un viol.", "link": {"numero":24}},
+                "d1973": {"niveau":4,"texte":"Danemark : Une loi autorisant l’avortement libre et gratuit jusqu’à la 12e semaine de grossesse.", "link": {"numero":24}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -15351,10 +15351,10 @@
             "properties": {
                 "id": 19,
                 "name": "Roumanie",
-                "d1936": {"niveau":3,"texte":"Roumanie : Depuis 1867, l’avortement était illégal. À compter de 1936, il est uniquement autorisé en cas de danger pour la mère."},
-                "d1957": {"niveau":4,"texte":"Roumanie : L’avortement est légalisé pour la première fois.","link": {"numero":44}},
-                "d1966": {"niveau":1,"texte":"Roumanie : Pour favoriser la natalité, l’avortement (tout comme la contraception) est interdit."},
-                "d1989": {"niveau":4,"texte":"Roumanie : L’indépendance de la Roumanie entraîne une nouvelle législation pour l’avortement, qui est à nouveau légalisé."}
+                "d1936": {"niveau":3,"texte":"Roumanie : Depuis 1867, l’avortement était illégal. À compter de 1936, il est uniquement autorisé en cas de danger pour la mère.", "link": {"numero":43}},
+                "d1957": {"niveau":4,"texte":"Roumanie : L’avortement est légalisé pour la première fois.","link": {"numero":43}},
+                "d1966": {"niveau":1,"texte":"Roumanie : Pour favoriser la natalité, l’avortement (tout comme la contraception) est interdit.", "link": {"numero":43}},
+                "d1989": {"niveau":4,"texte":"Roumanie : L’indépendance de la Roumanie entraîne une nouvelle législation pour l’avortement, qui est à nouveau légalisé.", "link": {"numero":43}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -15644,9 +15644,9 @@
             "properties": {
                 "id": 20,
                 "name": "Espagne",
-                "d1941": {"niveau":1,"texte":"Espagne : Pendant le gouvernement de Franco, l’avortement est considéré comme un crime contre l’État."},
-                "d1985": {"niveau":2,"texte":"Espagne : Jusqu’en 1985, avorter était considéré comme un délit. À cette date, l’Espagne dépénalise l’IVG pour les femmes dont le pronostic vital est engagé, pour celles ayant été violées et en cas de malformation du fœtus."},
-                "d2010": {"niveau":2,"texte":"Espagne : Une  loi autorise l’avortement jusqu’à 14 semaines et 22 semaines de grossesse en cas de malformation du fœtus."}
+                "d1941": {"niveau":1,"texte":"Espagne : Pendant le gouvernement de Franco, l’avortement est considéré comme un crime contre l’État.", "link": {"numero":8}},
+                "d1985": {"niveau":2,"texte":"Espagne : Jusqu’en 1985, avorter était considéré comme un délit. À cette date, l’Espagne dépénalise l’IVG pour les femmes dont le pronostic vital est engagé, pour celles ayant été violées et en cas de malformation du fœtus.", "link": {"numero":8}},
+                "d2010": {"niveau":2,"texte":"Espagne : Une  loi autorise l’avortement jusqu’à 14 semaines et 22 semaines de grossesse en cas de malformation du fœtus.", "link": {"numero":8}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -16977,9 +16977,9 @@
             "properties": {
                 "id": 24,
                 "name": "Irlande",
-                "d1983": {"niveau":1,"texte":"Irlande : Les Irlandais ont adopté un article constitutionnel qui protège la vie du fœtus autant que celle de la mère ; ainsi l’avortement est strictement interdit."},
-                "d2013": {"niveau":3,"texte":"Irlande : Entre 1861 et 2013, l’avortement est passible d’une peine de prison pouvant aller jusqu’à 14 ans."},
-                "d2018": {"niveau":4,"texte":"Irlande - 13 décembre 2018 : Le Parlement irlandais adopte le projet de loi prévoyant que l’avortement pourra être pratiqué sans justification pendant les 12 premières semaines de grossesse, jusqu’à 24 semaines en cas de risque grave pour la santé de la mère et ensuite seulement en cas d’anomalie fœtale."}
+                "d1983": {"niveau":1,"texte":"Irlande : Les Irlandais ont adopté un article constitutionnel qui protège la vie du fœtus autant que celle de la mère ; ainsi l’avortement est strictement interdit.", "link": {"numero":3}},
+                "d2013": {"niveau":3,"texte":"Irlande : Entre 1861 et 2013, l’avortement est passible d’une peine de prison pouvant aller jusqu’à 14 ans.", "link": {"numero":3}},
+                "d2018": {"niveau":4,"texte":"Irlande - 13 décembre 2018 : Le Parlement irlandais adopte le projet de loi prévoyant que l’avortement pourra être pratiqué sans justification pendant les 12 premières semaines de grossesse, jusqu’à 24 semaines en cas de risque grave pour la santé de la mère et ensuite seulement en cas d’anomalie fœtale.", "link": {"numero":3}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -17315,8 +17315,8 @@
             "properties": {
                 "id": 25,
                 "name": "Grèce",
-                "d1978": {"niveau":1,"texte":"Grèce : Un projet de loi est déposé en 1978, ce dernier prévoyait l’interruption légale de la grossesse, sans limitation de temps, en cas de menace à la santé ou à la vie de la femme."},
-                "d1986": {"niveau":3,"texte":"Grèce : La proposition de loi datant de huit ans auparavant est acceptée. Cette loi a permis l’interruption jusqu’à la 12e semaine de grossesse en raison d’indications psychiatriques et à la 20e semaine en raison de pathologie fœtale."}
+                "d1978": {"niveau":1,"texte":"Grèce : Un projet de loi est déposé en 1978, ce dernier prévoyait l’interruption légale de la grossesse, sans limitation de temps, en cas de menace à la santé ou à la vie de la femme.", "link": {"numero":54}},
+                "d1986": {"niveau":3,"texte":"Grèce : La proposition de loi datant de huit ans auparavant est acceptée. Cette loi a permis l’interruption jusqu’à la 12e semaine de grossesse en raison d’indications psychiatriques et à la 20e semaine en raison de pathologie fœtale.", "link": {"numero":54}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -18412,7 +18412,7 @@
             "properties": {
                 "id": 26,
                 "name": "Autriche",
-                "d1975": {"niveau":4,"texte":"Autriche - 1er janvier 1975 : L’avortement est totalement légalisé. Il est possible jusqu’à trois mois de grossesse et après si la santé mentale ou physiqe de la mère est en danger, s’il y a un risque dans le développement du fœtus ou si la patiente est âgée de moins de 14 ans. La loi protège les praticiens qui ne souhaitent pas pratiquer d’avortement."}
+                "d1975": {"niveau":4,"texte":"Autriche - 1er janvier 1975 : L’avortement est totalement légalisé. Il est possible jusqu’à trois mois de grossesse et après si la santé mentale ou physiqe de la mère est en danger, s’il y a un risque dans le développement du fœtus ou si la patiente est âgée de moins de 14 ans. La loi protège les praticiens qui ne souhaitent pas pratiquer d’avortement.", "link": {"numero":54}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -19894,8 +19894,8 @@
             "properties": {
                 "id": 30,
                 "name": "Liechtenstein",
-                "d1913": {"niveau":1,"texte":"Liechtenstein (depuis toujours) : L’avortement est illégal dans la plupart des cas et est passible de peines de prison pour la femme comme pour le médecin qui le pratique"},
-                "d2015": {"niveau":3,"texte":"Liechtenstein : L’avortement est autorisé uniquement en cas de viol d’une jeune fille de moins de 14 ans."}
+                "d1913": {"niveau":1,"texte":"Liechtenstein (depuis toujours) : L’avortement est illégal dans la plupart des cas et est passible de peines de prison pour la femme comme pour le médecin qui le pratique", "link": {"numero":40}},
+                "d2015": {"niveau":3,"texte":"Liechtenstein : L’avortement est autorisé uniquement en cas de viol d’une jeune fille de moins de 14 ans.", "link": {"numero":40}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -19926,8 +19926,8 @@
             "properties": {
                 "id": 31,
                 "name": "Slovénie",
-                "d1977": {"niveau":4,"texte":"Slovénie - 7 octobre 1977 : Le gouvernement Yougoslave légalise l’avortement."},
-                "d1992": {"niveau":4,"texte":"Slovénie : La loi pour l’avortement est modifiée afin de permettre aux médecins de refuser de pratiquer une interruption de grossesse en raison de leur conviction religieuse."}
+                "d1977": {"niveau":4,"texte":"Slovénie - 7 octobre 1977 : Le gouvernement Yougoslave légalise l’avortement.", "link": {"numero":48}},
+                "d1992": {"niveau":4,"texte":"Slovénie : La loi pour l’avortement est modifiée afin de permettre aux médecins de refuser de pratiquer une interruption de grossesse en raison de leur conviction religieuse.", "link": {"numero":48}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -20075,12 +20075,12 @@
             "properties": {
                 "id": 32,
                 "name": "Croatie",
-                "d1952": {"niveau":3,"texte":"Croatie : L’avortement est autorisé sur indication médicale, eugénique ou légale."},
-                "d1960": {"niveau":2,"texte":"Croatie : L’avortement est interdit sauf pour des raisons sociales."},
-                "d1969": {"niveau":2,"texte":"Croatie : Une loi selon laquelle l’approbation d’une commission était requise pour mettre fin à une grossesse dans les 10 premières semaines a été révoquée"},
-                "d1978": {"niveau":2,"texte":"Croatie - 21 avril 1978 : L'« Acte concernant les mesures médicales pour la matérialisation du droit de décider librement de la naissance des enfants » a été adopté dans la République socialiste de Croatie (1945-1991). Cette loi sur l’avortement n’a pas été modifiée lorsque la Croatie a obtenu son indépendance de la Yougoslavie en 1991, bien que les partis de droite aient proposé de resserrer les conditions de l’avortement légal."},
-                "d2014": {"niveau":4,"texte":"Croatie - Novembre 2014 : Le ministre de la santé annonce que l’avortement sera possible dans les hôpitaux publics."},
-                "d2017": {"niveau":4,"texte":"Croatie - Mars 2017 : La Cour Constitutionnelle remet en question la loi autorisant l’avortement et annonce que des informations sur les mesures préventives seront fournies dans les établissements scolaires dans le cadre des cours d’éducation sexuelle afin de ne permettre l’avortement que dans des cas exceptionnels."}
+                "d1952": {"niveau":3,"texte":"Croatie : L’avortement est autorisé sur indication médicale, eugénique ou légale.", "link": {"numero":56}},
+                "d1960": {"niveau":2,"texte":"Croatie : L’avortement est interdit sauf pour des raisons sociales.", "link": {"numero":56}},
+                "d1969": {"niveau":2,"texte":"Croatie : Une loi selon laquelle l’approbation d’une commission était requise pour mettre fin à une grossesse dans les 10 premières semaines a été révoquée", "link": {"numero":56}},
+                "d1978": {"niveau":2,"texte":"Croatie - 21 avril 1978 : L'« Acte concernant les mesures médicales pour la matérialisation du droit de décider librement de la naissance des enfants » a été adopté dans la République socialiste de Croatie (1945-1991). Cette loi sur l’avortement n’a pas été modifiée lorsque la Croatie a obtenu son indépendance de la Yougoslavie en 1991, bien que les partis de droite aient proposé de resserrer les conditions de l’avortement légal.", "link": {"numero":56}},
+                "d2014": {"niveau":4,"texte":"Croatie - Novembre 2014 : Le ministre de la santé annonce que l’avortement sera possible dans les hôpitaux publics.", "link": {"numero":56}},
+                "d2017": {"niveau":4,"texte":"Croatie - Mars 2017 : La Cour Constitutionnelle remet en question la loi autorisant l’avortement et annonce que des informations sur les mesures préventives seront fournies dans les établissements scolaires dans le cadre des cours d’éducation sexuelle afin de ne permettre l’avortement que dans des cas exceptionnels.", "link": {"numero":56}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20519,7 +20519,7 @@
             "properties": {
                 "id": 33,
                 "name": "Serbie",
-                "d1977": {"niveau":4,"texte":"Serbie : L’avortement est autorisé jusqu’à 10 semaines de grossesse, un accord parental est demandé aux mineures de moins de 16 ans."}
+                "d1977": {"niveau":4,"texte":"Serbie : L’avortement est autorisé jusqu’à 10 semaines de grossesse, un accord parental est demandé aux mineures de moins de 16 ans.", "link": {"numero":39}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21000,9 +21000,9 @@
             "properties": {
                 "id": 35,
                 "name": "Saint Marin",
-                "d1974": {"niveau":1,"texte":"Saint-Marin : L’avortement est illégal et passible de prison pour la femme et toute personne qui l’aide."},
-                "d2021": {"niveau":4,"texte":"Saint-Marin : L’interruption volontaire d’une grossesse de moins de douze semaines est possible sans conditions."},
-                "d2022": {"niveau":4,"texte":"Saint-Marin - 31 août 2022 : L’avortement est entièrement remboursé et une information à son sujet est fournie lors des cours d’éducation sexuelle."}
+                "d1974": {"niveau":1,"texte":"Saint-Marin : L’avortement est illégal et passible de prison pour la femme et toute personne qui l’aide.", "link": {"numero":41}},
+                "d2021": {"niveau":4,"texte":"Saint-Marin : L’interruption volontaire d’une grossesse de moins de douze semaines est possible sans conditions.", "link": {"numero":41}},
+                "d2022": {"niveau":4,"texte":"Saint-Marin - 31 août 2022 : L’avortement est entièrement remboursé et une information à son sujet est fournie lors des cours d’éducation sexuelle.", "link": {"numero":41}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21246,8 +21246,8 @@
             "properties": {
                 "id": 39,
                 "name": "Monténégro",
-                "d1977": {"niveau":3,"texte":"Montenegro : la loi de 1977 adoptée par la Yougoslavie prévoit que la femme doit payer pour un avortement effectué sur demande, et les avortements ne peuvent être effectués que dans des établissements médicaux qui répondent à certaines normes minimales."},
-                "d2009": {"niveau":4,"texte":"Montenegro : L’avortement est légal sur demande pendant les dix premières semaines de grossesse. Entre 10 et 20 semaines, les avortements doivent être approuvés par un comité, et ne peuvent être pratiqués que pour des raisons médicales, si l’enfant est censé naître avec une incapacité grave, si la grossesse est le résultat d’un crime, ou si la femme pourrait faire face à des circonstances familiales graves pendant la grossesse ou après la naissance. Entre 20 et 32 semaines, les avortements doivent être approuvés par un comité d’éthique, et ne sont accordés que pour des raisons médicales ou en cas de malformations fœtales graves. Après 32 semaines, les avortements ne peuvent être autorisés que pour sauver la vie de la femme enceinte."}
+                "d1977": {"niveau":3,"texte":"Montenegro : la loi de 1977 adoptée par la Yougoslavie prévoit que la femme doit payer pour un avortement effectué sur demande, et les avortements ne peuvent être effectués que dans des établissements médicaux qui répondent à certaines normes minimales.", "link": {"numero":45}},
+                "d2009": {"niveau":4,"texte":"Montenegro : L’avortement est légal sur demande pendant les dix premières semaines de grossesse. Entre 10 et 20 semaines, les avortements doivent être approuvés par un comité, et ne peuvent être pratiqués que pour des raisons médicales, si l’enfant est censé naître avec une incapacité grave, si la grossesse est le résultat d’un crime, ou si la femme pourrait faire face à des circonstances familiales graves pendant la grossesse ou après la naissance. Entre 20 et 32 semaines, les avortements doivent être approuvés par un comité d’éthique, et ne sont accordés que pour des raisons médicales ou en cas de malformations fœtales graves. Après 32 semaines, les avortements ne peuvent être autorisés que pour sauver la vie de la femme enceinte.", "link": {"numero":45}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21836,9 +21836,9 @@
             "properties": {
                 "id": 42,
                 "name": "Islande",
-                "d1935": {"niveau":3,"texte":"Islande : L’avortement est un droit même s’il est limité pour des raisons médicales ou sociales, comme par exemple une incapacité de prendre en charge l’enfant."},
-                "d1975": {"niveau":2,"texte":"Islande - Loi du 22 mai 1975 : L’avortement est « légal dans des circonstances médicales et sociales spécifiques »."},
-                "d2019": {"niveau":4,"texte":"Islande : Légalisation de l’avortement jusqu’à la fin de la 22e semaine de grossesse."}
+                "d1935": {"niveau":3,"texte":"Islande : L’avortement est un droit même s’il est limité pour des raisons médicales ou sociales, comme par exemple une incapacité de prendre en charge l’enfant.", "link": {"numero":2}},
+                "d1975": {"niveau":2,"texte":"Islande - Loi du 22 mai 1975 : L’avortement est « légal dans des circonstances médicales et sociales spécifiques ».", "link": {"numero":2}},
+                "d2019": {"niveau":4,"texte":"Islande : Légalisation de l’avortement jusqu’à la fin de la 22e semaine de grossesse.", "link": {"numero":2}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -22307,7 +22307,7 @@
             "properties": {
                 "id": 43,
                 "name": "Vatican",
-                "d1913": {"niveau":1,"texte":"Vatican (depuis 1398) : Il n’existe aucune loi interdisant l’avortement mais puisque ce sont les règles de la Bible qui s’appliquent sur ce territoire, l’avortement est un acte moralement inacceptable."}
+                "d1913": {"niveau":1,"texte":"Vatican (depuis 1398) : Il n’existe aucune loi interdisant l’avortement mais puisque ce sont les règles de la Bible qui s’appliquent sur ce territoire, l’avortement est un acte moralement inacceptable.", "link": {"numero":44}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -22367,9 +22367,9 @@
             "properties": {
                 "id": 45,
                 "name": "Royaume-Uni",
-                "d1968": {"niveau":2,"texte":"Royaume-Uni - Abortion Act de 1967 : À partir du 27 avril 1968, l’interruption d’une grossesse n’était pas punissable si elle était pratiquée dans les 28 premières semaines de la grossesse et si deux médecins avaient fourni une attestation que la santé physique ou mentale de la femme était en péril ou que des tests médicaux avaient apporté la preuve que l’enfant va naître avec des malformations physiques ou mentales."},
-                "d1969": {"niveau":2,"texte":"Royaume-Uni : La Family Law Reform dispose qu’à partir de 16 ans, une fille peut faire avorter sa grossesse sans le consentement de ses parents ; tandis qu’avant cet âge, leur consentement est obligatoire."},
-                "d1990": {"niveau":2,"texte":"Royaume-Uni : L’Human Fertilisation and Embryologie Act a réduit le délai pendant lequel l’interruption d’une grossesse n’est pas punissable à 24 semaines dans les mêmes conditions qu’auparavant."}
+                "d1968": {"niveau":2,"texte":"Royaume-Uni - Abortion Act de 1967 : À partir du 27 avril 1968, l’interruption d’une grossesse n’était pas punissable si elle était pratiquée dans les 28 premières semaines de la grossesse et si deux médecins avaient fourni une attestation que la santé physique ou mentale de la femme était en péril ou que des tests médicaux avaient apporté la preuve que l’enfant va naître avec des malformations physiques ou mentales.", "link": {"numero":11}},
+                "d1969": {"niveau":2,"texte":"Royaume-Uni : La Family Law Reform dispose qu’à partir de 16 ans, une fille peut faire avorter sa grossesse sans le consentement de ses parents ; tandis qu’avant cet âge, leur consentement est obligatoire.", "link": {"numero":11}},
+                "d1990": {"niveau":2,"texte":"Royaume-Uni : L’Human Fertilisation and Embryologie Act a réduit le délai pendant lequel l’interruption d’une grossesse n’est pas punissable à 24 semaines dans les mêmes conditions qu’auparavant.", "link": {"numero":11}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -23357,9 +23357,9 @@
             "properties": {
                 "id": 46,
                 "name": "Irlande du Nord",
-                "d1945": {"niveau":1,"texte":"Irlande du Nord : L’Offences Against the Person Act 1861 qui interdit toute forme d’interruption de grossesse est amendé par le Criminal Justice Act de 1945 qui dépénalise l’avortement en cas de danger pour la vie de la mère lorsque l’acte a été pratiqué « de bonne foi ». Dans la région, l’avortement n’est donc pas autorisé en cas de viol, d’inceste ou d’anomalie fœtale létale (fatal fetal abnormality) ou grave (serious fetal abnormality)."},
-                "d1968": {"niveau":1,"texte":"Irlande du Nord : L’Abortion Act de 1967 ne s’appliquant pas sur le territoire d’Irlande du Nord, la loi qui s’y applique est l’Offences Against the Person Act 1861 qui interdit toute forme d’interruption de grossesse."},
-                "d2020": {"niveau":2,"texte":"Irlande du Nord - 25 mars 2020 : Le gouvernement britannique publie les Abortion (Northern Ireland) Regulations 2020. En vertu de ces dispositions, l’avortement est possible en Irlande du Nord dans un délai de douze semaines, sans aucune autre condition qu’une attestation médicale relative à la durée de la grossesse. Un avortement après douze semaines est également possible en cas d’anomalie du fœtus, grave ou létale."}
+                "d1945": {"niveau":1,"texte":"Irlande du Nord : L’Offences Against the Person Act 1861 qui interdit toute forme d’interruption de grossesse est amendé par le Criminal Justice Act de 1945 qui dépénalise l’avortement en cas de danger pour la vie de la mère lorsque l’acte a été pratiqué « de bonne foi ». Dans la région, l’avortement n’est donc pas autorisé en cas de viol, d’inceste ou d’anomalie fœtale létale (fatal fetal abnormality) ou grave (serious fetal abnormality).", "link": {"numero":3}},
+                "d1968": {"niveau":1,"texte":"Irlande du Nord : L’Abortion Act de 1967 ne s’appliquant pas sur le territoire d’Irlande du Nord, la loi qui s’y applique est l’Offences Against the Person Act 1861 qui interdit toute forme d’interruption de grossesse.", "link": {"numero":3}},
+                "d2020": {"niveau":2,"texte":"Irlande du Nord - 25 mars 2020 : Le gouvernement britannique publie les Abortion (Northern Ireland) Regulations 2020. En vertu de ces dispositions, l’avortement est possible en Irlande du Nord dans un délai de douze semaines, sans aucune autre condition qu’une attestation médicale relative à la durée de la grossesse. Un avortement après douze semaines est également possible en cas d’anomalie du fœtus, grave ou létale.", "link": {"numero":3}}
             },
             "geometry": {
                 "type": "MultiPolygon",
