@@ -15,7 +15,7 @@ const Sources = [
     },
     {
         "lien":"https://www.femmeactuelle.fr/sante/sante-pratique/droit-avortement-en-france-histoire-d-un-combat-2047911",
-        "nom":"Droit à l’avortement en France, l’histoire du combet - Femme Actuelle"
+        "nom":"Droit à l’avortement en France, l’histoire du combat - Femme Actuelle"
     },
     {
         "lien":"https://fr.wikipedia.org/wiki/Droit_de_l%27avortement#:~:text=13%20d%C3%A9cembre%202018.-,Islande,tout%20moment%20de%20la%20grossesse",
@@ -24,6 +24,38 @@ const Sources = [
     {
         "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Irlande_(pays)",
         "nom":"Avortement en Irlande - Wikipédia"
+    },
+    {
+        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
+        "nom":"Avortement à l’étranger - Ooreka"
+    },
+    {
+        "lien":"http://eurojournalist.eu/le-droit-des-femmes-a-lislandaise/#:~:text=En%20Islande%2C%20l%E2%80%99avortement%20est%20un%20droit%20depuis%201935%2C,exemple%20une%20incapacit%C3%A9%20de%20prendre%20en%20charge%20l%E2%80%99enfant",
+        "nom":"Le droit des femmes à l’islandaise - Eurojournalist"
+    },
+    {
+        "lien":"https://www.lisbob.net/fr/blog/ivg-avortement-tout-savoir-ou-quand-comment-portugal",
+        "nom":"Article - Portugal : IVG et Avortement tout savoir (Où ? Quand ? Comment ?) - Lisbob"
+    },
+    {
+        "lien":"https://www.50-50magazine.fr/2015/07/27/droit-a-lavortement-au-portugal-un-grand-pas-en-arriere-apres-huit-ans-davancees-pour-les-femmes/#:~:text=Depuis%20le%20r%C3%A9f%C3%A9rendum%20de%202007%2C%20les%20femmes%20portugaises,prise%20en%20charge%20par%20le%20syst%C3%A8me%20de%20sant%C3%A9",
+        "nom":"Article - Droit à l’avortement au Portugal : un grand pas en arrière après huit ans d’avancées - 50/50 Magazine"
+    },
+    {
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Espagne",
+        "nom":"Avortement en Espagne - page wikipédia"
+    },
+    {
+        "lien":"https://major-prepa.com/langues/espagnol/legalisation-avortement-pays-hispanophones/#:~:text=Jusqu%E2%80%99en%201985%2C%20avorter%20est%20consid%C3%A9r%C3%A9%20comme%20un%20d%C3%A9lit.,viol%C3%A9es%20et%20en%20cas%20de%20malformation%20du%20f%C5%93tus",
+        "nom":"Article - La légalisation de l’avortement dans les pays hispanophones - site Major Prepa"
+    },
+    {
+        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
+        "nom":"Avortement à l’étranger - Ooreka"
+    },
+    {
+        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
+        "nom":"Avortement à l’étranger - Ooreka"
     },
     {
         "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
@@ -57,18 +89,20 @@ function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
     if(valeurCurseur >= 1912){
-        console.log(feature.properties["d"+valeurCurseur].link.numero)
-        document.querySelector("#explication p").innerHTML = "<strong>Depuis " 
+        let content = "<strong>Depuis " 
         + valeurCurseur 
         + "</strong><br>" 
         + feature.properties["d"+valeurCurseur].texte
-        + "<br>"
-        + "Sources : <a href='" 
-        + Sources[feature.properties["d"+valeurCurseur].link.numero].lien 
-        + "'>" 
-        + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
-        + "</a>"; 
-    } 
+        + "<br>";
+        if(feature.properties["d"+valeurCurseur].link.numero != undefined){
+            console.log(feature.properties["d"+valeurCurseur].link.numero)
+            content = content + "Sources : <a href='" 
+            + Sources[feature.properties["d"+valeurCurseur].link.numero].lien 
+            + "'>" 
+            + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
+            + "</a>"; 
+            document.querySelector("#explication p").innerHTML = content;
+        } }
     else{
         document.querySelector("#explication p").innerHTML = "Cliquez sur un pays coloré pour obtenir plus d'informations.";
     }
