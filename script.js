@@ -11,7 +11,7 @@ var layer = null;
 const Sources = [
     {
         "lien":"#",
-        "nom":"Source manquante"
+        "nom":"Source indisponible"
     },
     {
         "lien":"https://www.femmeactuelle.fr/sante/sante-pratique/droit-avortement-en-france-histoire-d-un-combat-2047911",
@@ -60,6 +60,53 @@ const Sources = [
     {
         "lien":"https://lequotidien.lu/a-la-une/pour-linscription-du-droit-a-lavortement-dans-la-constitution/",
         "nom":"Article - Pour l’inscription du droit à l’avortement dans la Constitution"
+    },
+    {
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Belgique",
+        "nom":"Avortement en Belgique - Wikipédia"
+    },
+    {
+        "lien":"https://www.genethique.org/avortement-les-pays-bas-suppriment-le-delai-de-reflexion/",
+        "nom":"Article - Avortement : Les Pays-Bas suppriment le délai de réflexion"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_aux_Pays-Bas",
+        "nom":"Avortement aux Pays-Bas - Wikipédia"
+    },{
+        "lien":"https://www.sante-sexuelle.ch/themes/grossesse-voulue-non-voulue/interrompre#histoire-de-l-interruption-de-grossesse-en-suisse ",
+        "nom":"Article - Grossesse non voulue : histoire de l’interruption de grossesse en Suisse"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Suisse ",
+        "nom":"Avortement en Suisse - Wikipédia"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Russie ",
+        "nom":"Avortement en Russie - Wikipédia"
+    },{
+        "lien":"https://www.lefigaro.fr/vox/monde/avortement-l-etat-de-la-situation-en-allemagne-20220706",
+        "nom":"Article - Avortement : l’état de la situation en Allemagne - Le Figaro"
+    },{
+        "lien":"https://www.ouest-france.fr/europe/allemagne/avortement-l-allemagne-supprime-une-loi-de-l-ere-nazie-04d3c35a-f3dc-11ec-96c2-5c611dc93293 ",
+        "nom":"Article - Avortement : l’Allemagne supprime une loi de l’érénazie - Ouest-France"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Loi_sur_l%27interruption_volontaire_de_grossesse_en_R%C3%A9publique_d%C3%A9mocratique_allemande#cite_note-P218-1 ",
+        "nom":"Article - Loi sur l’interruption volontaire de grossesse en République Démocratique Allemande - Wikipédia"
+    },{
+        "lien":"http://www.humansforwomen.org/le-blog/avortement-italie/",
+        "nom":"Article - Avortement en Italie - Humans for Women"
+    },{
+        "lien":"https://www.rfi.fr/fr/europe/20221004-italie-quid-du-droit-%C3%A0-l-avortement-apr%C3%A8s-la-victoire-de-girogia-meloni",
+        "nom":"Article - Italie : Quid du droit à l’avortement après la victoire de Girogia Meloni - RFI"
+    },{
+        "lien":"https://www.lefigaro.fr/international/le-debat-sur-l-avortement-relance-au-danemark-20220811#:~:text=Le%20royaume%20scandinave%20fit%20figure,du%20continent%20en%20la%20mati%C3%A8re.",
+        "nom":"Article - Le débat sur l’avortement : relance au Danemark - Le Figaro"
+    },{
+        "lien":"https://www.sudouest.fr/sante/a-malte-seul-pays-d-europe-qui-interdit-totalement-l-avortement-des-medecins-deposent-un-recours-11449158.php",
+        "nom":"Article - Malte : seul pays d’Europe qui interdit totalement l’avortement - Sud Ouest"
+    },{
+        "lien":"https://www.genethique.org/avortement-a-malte-le-president-pret-a-demissionner/",
+        "nom":"Article - Avortement à Malte le président prêt à démisionner - Genethique"
+    },{
+        "lien":"https://causam.fr/medecine-et-sante-encyclopedie/180-histoire-de-l-avortement",
+        "nom":"Histoire de l’avortement - Encyclopédie: médecine et santé - Causam"
     }
 ]
 
@@ -95,7 +142,7 @@ function afficheTexte(feature){
         + "</strong><br>" 
         + feature.properties["d"+valeurCurseur].texte
         + "<br>";
-        //affichage des sources
+        //Affichage des sources
         if(feature.properties["d"+valeurCurseur].link != undefined){
             if(Sources[feature.properties["d"+valeurCurseur].link.numero] != undefined){
                 content = content + "Sources : <a href='" 
@@ -104,12 +151,14 @@ function afficheTexte(feature){
                 + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
                 + "</a>";
             } else {
-                content = content + "Sources : <p>" 
+                console.log("Source manquante dans le tableau de sources");
+                content = content +"<p>" 
                 + Sources[0].nom
                 + "</p>";  
             }
         } else {
-            content = content + "Sources : <p>" 
+            console.log("Source manquante dans la base de données custom.geo.json");
+            content = content + "<p>" 
             + Sources[0].nom
             + "</p>"; 
         }
