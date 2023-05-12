@@ -47,19 +47,19 @@ const Sources = [
     },
     {
         "lien":"https://major-prepa.com/langues/espagnol/legalisation-avortement-pays-hispanophones/#:~:text=Jusqu%E2%80%99en%201985%2C%20avorter%20est%20consid%C3%A9r%C3%A9%20comme%20un%20d%C3%A9lit.,viol%C3%A9es%20et%20en%20cas%20de%20malformation%20du%20f%C5%93tus",
-        "nom":"Article - La légalisation de l’avortement dans les pays hispanophones - site Major Prepa"
+        "nom":"Article - La légalisation de l’avortement dans les pays hispanophones - Major Prepa"
     },
     {
-        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
-        "nom":"Avortement à l’étranger - Ooreka"
+        "lien":"",
+        "nom":"Courrier international n°1666 du 6 au 12 octobre"
     },
     {
-        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
-        "nom":"Avortement à l’étranger - Ooreka"
+        "lien":"https://fr.wikipedia.org/wiki/Droit_de_l'avortement#Royaume-Uni ",
+        "nom":"Avortement en Royaume-Uni - Wikipédia"
     },
     {
-        "lien":"https://avortement.ooreka.fr/comprendre/avortement-etranger",
-        "nom":"Avortement à l’étranger - Ooreka"
+        "lien":"https://lequotidien.lu/a-la-une/pour-linscription-du-droit-a-lavortement-dans-la-constitution/",
+        "nom":"Article - Pour l’inscription du droit à l’avortement dans la Constitution"
     }
 ]
 
@@ -89,20 +89,31 @@ function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
     if(valeurCurseur >= 1912){
+        console.log(feature.properties["d"+valeurCurseur].texte)
         let content = "<strong>Depuis " 
         + valeurCurseur 
         + "</strong><br>" 
         + feature.properties["d"+valeurCurseur].texte
         + "<br>";
-        if(feature.properties["d"+valeurCurseur].link.numero != undefined){
-            console.log(feature.properties["d"+valeurCurseur].link.numero)
-            content = content + "Sources : <a href='" 
-            + Sources[feature.properties["d"+valeurCurseur].link.numero].lien 
-            + "'>" 
-            + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
-            + "</a>"; 
-            document.querySelector("#explication p").innerHTML = content;
-        } }
+        //affichage des sources
+        if(feature.properties["d"+valeurCurseur].link != undefined){
+            if(Sources[feature.properties["d"+valeurCurseur].link.numero] != undefined){
+                content = content + "Sources : <a href='" 
+                + Sources[feature.properties["d"+valeurCurseur].link.numero].lien 
+                + "'>" 
+                + Sources[feature.properties["d"+valeurCurseur].link.numero].nom 
+                + "</a>";
+            } else {
+                content = content + "Sources : <p>" 
+                + Sources[0].nom
+                + "</p>";  
+            }
+        } else {
+            content = content + "Sources : <p>" 
+            + Sources[0].nom
+            + "</p>"; 
+        }
+        document.querySelector("#explication p").innerHTML = content;}
     else{
         document.querySelector("#explication p").innerHTML = "Cliquez sur un pays coloré pour obtenir plus d'informations.";
     }
@@ -141,7 +152,6 @@ function ColorLevel(niveau) {
         console.log("erreure de saisit dans la base de donnée, niveau trop élevé : "+niveau);
     }
     else {
-        console.log("probable erreure de saisit dans la base de donnée, niveau trop faible : "+niveau);
         return "#b0b0b0";
     }
 };
