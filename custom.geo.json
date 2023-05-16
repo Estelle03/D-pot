@@ -2327,14 +2327,18 @@
             "properties": {
                 "id": 6,
                 "name": "Allemagne",
-                "d1927": {"niveau":2,"texte":"Allemagne - 11 mars 1927 : Le tribunal du Reich accorde l’exception de l’avortement pour l’autoriser en cas d’indication médicale stricte."},
-                "d1933": {"niveau":1,"texte":"Allemagne : la mise en place de l’article 219a pénalise d’une « peine privative de liberté allant jusqu’à deux ans et d’une amende » toute personne qui, « en public ou par ses écrits », « propose, annonce, fait de la publicité ou rend publiques des déclarations tendant à pratiquer ou promouvoir une interruption de grossesse » ou encore fait « référence à des moyens, des objets ou des procédés susceptibles d’interrompre une grossesse […] »."},
-                "d1943": {"niveau":2,"texte":"Allemagne : Le Troisième Reich considère l’avortement comme une « atteinte à la force vitale du peuple allemand ». En outre, l’interdiction stricte ne concerne – à l’exception de l’indication médicale – que les grossesses souhaitées « racialement pures ». Au delà de ces exceptions la peine encourue est la peine de mort."},
-                "d1950": {"niveau":2,"texte":"Allemagne - 27 septembre 1950 : La loi sur la protection de la mère et de l’enfant et sur les droits de la femme entre en vigueur. Avec l’article 11, elle introduit une réglementation unifiée de l’interruption volontaire de grossesse en RDA."},
-                "d1965": {"niveau":2,"texte":"Allemagne : L’article 11 entre en vigueur, l’interruption de grossesse est autorisée après une indication médicale ou embryopathique, « lorsque le développement de l’enfant met gravement en péril la vie ou la santé de la femme enceinte ou lorsque l’un des parents souffre d’une grave maladie héréditaire »."},
-                "d1972": {"niveau":4,"texte":"Allemagne - 9 mars 1972 : Loi sur l’interruption volontaire de grossesse adoptée par le parlement de la RDA. "},
-                "d1995": {"niveau":2,"texte":"Allemagne : La loi interdit toujours l’IVG, mais celle-ci n’est plus condamnable en deçà de 12 semaines de grossesse"},
-                "d2022": {"niveau":3,"texte":"Allemagne - 24 juin 2022 : Suppression de l’article 219a du code pénal allemand interdisant « la publicité pour l’interruption de grossesse »."}
+                "d1927": {"niveau":2,"texte":"Allemagne - 11 mars 1927 : Le tribunal du Reich accorde l’exception de l’avortement pour l’autoriser en cas d’indication médicale stricte.", "link": {"numero":21}},
+                "d1933": {"niveau":1,"texte":"Allemagne : la mise en place de l’article 219a pénalise d’une « peine privative de liberté allant jusqu’à deux ans et d’une amende » toute personne qui, « en public ou par ses écrits », « propose, annonce, fait de la publicité ou rend publiques des déclarations tendant à pratiquer ou promouvoir une interruption de grossesse » ou encore fait « référence à des moyens, des objets ou des procédés susceptibles d’interrompre une grossesse […] ».", "link": {"numero":19}},
+                "d1943": {"niveau":2,"texte":"Allemagne : Le Troisième Reich considère l’avortement comme une « atteinte à la force vitale du peuple allemand ». En outre, l’interdiction stricte ne concerne – à l’exception de l’indication médicale – que les grossesses souhaitées « racialement pures ». Au delà de ces exceptions la peine encourue est la peine de mort.", "link": {"numero":21}},
+                "d1950": {"niveau":2,"texte":"Allemagne - 27 septembre 1950 : La loi sur la protection de la mère et de l’enfant et sur les droits de la femme entre en vigueur. Avec l’article 11, elle introduit une réglementation unifiée de l’interruption volontaire de grossesse en RDA.", "link": {"numero":21}},
+                "d1965": {"niveau":2,"texte":"Allemagne : L’article 11 entre en vigueur, l’interruption de grossesse est autorisée après une indication médicale ou embryopathique, « lorsque le développement de l’enfant met gravement en péril la vie ou la santé de la femme enceinte ou lorsque l’un des parents souffre d’une grave maladie héréditaire ».", "link": {"numero":21}},
+                "d1972": {"niveau":4,"texte":"Allemagne - 9 mars 1972 : Loi sur l’interruption volontaire de grossesse adoptée par le parlement de la RDA. ", "link": {"numero":21}},
+                "d1974": {"niveau":2,"texte":"Allemagne : Une première loi, visant rendre plus accesible l'avortement est adoptée.", "link": {"numero":19}},
+                "d1975": {"niveau":3,"texte":"Allemagne : La loi promulguée en 1974 est Uannulée par la Cour Constitutionnelle fédérale (arrêt du 25 février 1975).", "link": {"numero":19}},
+                "d1992": {"niveau":2,"texte":"Allemagne : Une nouvelle loi, tendant à dépénaliser partiellement l'avortement est adoptée.", "link": {"numero":19}},
+                "d1993": {"niveau":3,"texte":"Allemagne : La loi promulguée en 1992 est Uannulée par la Cour Constitutionnelle fédérale (arrêt du 28 mai 1993).", "link": {"numero":19}},
+                "d1995": {"niveau":2,"texte":"Allemagne : La loi interdit toujours l’IVG, mais celle-ci n’est plus condamnable en deçà de 12 semaines de grossesse", "link": {"numero":4}},
+                "d2022": {"niveau":3,"texte":"Allemagne - 24 juin 2022 : Suppression de l’article 219a du code pénal allemand interdisant « la publicité pour l’interruption de grossesse ».", "link": {"numero":19}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -11027,13 +11031,16 @@
             }
         },
         {
+            
             "type": "Feature",
             "properties": {
                 "id": 9,
                 "name": "Norvège",
-                "d1960": {"niveau":3,"texte":"Norvège : L’avortement est légalisé mais aucune loi n’est promulguée."},
-                "d1964": {"niveau":2,"texte":"Norvège : La loi pour l’avortement passe. Ce dernier est autorisé uniquement si la mère est en danger et que la décison et prise par deux médecins."},
-                "d1978": {"niveau":4,"texte":"Norvège : L’IVG est autorisée jusqu’à la douzième semaine de grossesse sur simple demande de la femme."}
+                "d1960": {"niveau":3,"texte":"Norvège : L’avortement est légalisé mais aucune loi n’est promulguée.", "link": {"numero":27}},
+                "d1964": {"niveau":2,"texte":"Norvège : La loi pour l’avortement passe. Ce dernier est autorisé uniquement si la mère est en danger et que la décison et prise par deux médecins.", "link": {"numero":28}},
+                "d1974": {"niveau":2,"texte":"Norvège : La question devient l'un des thèmes centraux de la nouvelle association des femmes. En juin 1974, plusieurs organisations se rassemblent pour créer le groupe d'action en faveur du libre choix des femmes en matière d'avortement. À l'automne 1974, un projet de loi est présenté au Storting, mais il est rejeté par une seule voix.", "link": {"numero":28}},
+                "d1975": {"niveau":2,"texte":"Norvège : En janvier 1975, un nouveau projet de loi est déposé et approuvé, entraînant une extension des conditions légales de l'avortement. Cependant, l'examen de cette loi a entraîné des divisions au sein du groupe d'action, conduisant finalement à sa dissolution.", "link": {"numero":28}},
+                "d1978": {"niveau":4,"texte":"Norvège : L’IVG est autorisée jusqu’à la douzième semaine de grossesse sur simple demande de la femme.", "link": {"numero":28}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14513,11 +14520,11 @@
             "properties": {
                 "id": 13,
                 "name": "Belgique",
-                "d1913": {"niveau":1,"texte":"Belgique : Dans le Code Pénal de 1867, l’avortement figure parmi les crimes « contre l’ordre des familles et contre la moralité publique ». En 1913 Henry Carton de Wiart réalise un projet de loi finalement voté après la Première Guerre mondiale en 1923, destiné à punir les incitations à l’avortement ainsi que la propagande pour la contraception."},
-                "d1940": {"niveau":3,"texte":"Belgique : Des avortements thérapeutiques ont lieu dans certains hôpitaux, tandis que d’autres sont pratiqués illégalement dans les années 1960 par certains plannings familiaux."},
-                "d1960": {"niveau":2,"texte":"Belgique - 30 juin 1960 : L’indépendance du Congo belge est proclamée. Les femmes portant ainsi un enfant d’un homme noir sont autorisé à avorter sans risquer d’être poursuivies."},
-                "d1976": {"niveau":2,"texte":"Belgique : Un comité de dépénalisation de l’avortement est créé."},
-                "d1990": {"niveau":4,"texte":"Belgique : L’avortement est définitivement dépénalisé avec la loi de dépénalisation partielle dite loi Lallemand-Michielsen. La loi du 3 avril 1990 précise que chaque femme a le droit de demander une interruption volontaire de grossesse (IVG) car cette intervention est légalement autorisée en Belgique. Sauf en cas de problème médical grave, l’avortement doit avoir lieu avant la fin de la 12e semaine qui suit la conception - donc 14 semaines après les dernières règles."}
+                "d1913": {"niveau":1,"texte":"Belgique : Dans le Code Pénal de 1867, l’avortement figure parmi les crimes « contre l’ordre des familles et contre la moralité publique ». En 1913 Henry Carton de Wiart réalise un projet de loi finalement voté après la Première Guerre mondiale en 1923, destiné à punir les incitations à l’avortement ainsi que la propagande pour la contraception.", "link": {"numero":13}},
+                "d1940": {"niveau":3,"texte":"Belgique : Des avortements thérapeutiques ont lieu dans certains hôpitaux, tandis que d’autres sont pratiqués illégalement dans les années 1960 par certains plannings familiaux.", "link": {"numero":13}},
+                "d1960": {"niveau":2,"texte":"Belgique - 30 juin 1960 : L’indépendance du Congo belge est proclamée. Les femmes portant ainsi un enfant d’un homme noir sont autorisé à avorter sans risquer d’être poursuivies.", "link": {"numero":13}},
+                "d1976": {"niveau":2,"texte":"Belgique : Un comité de dépénalisation de l’avortement est créé.", "link": {"numero":13}},
+                "d1990": {"niveau":4,"texte":"Belgique : L’avortement est définitivement dépénalisé avec la loi de dépénalisation partielle dite loi Lallemand-Michielsen. La loi du 3 avril 1990 précise que chaque femme a le droit de demander une interruption volontaire de grossesse (IVG) car cette intervention est légalement autorisée en Belgique. Sauf en cas de problème médical grave, l’avortement doit avoir lieu avant la fin de la 12e semaine qui suit la conception - donc 14 semaines après les dernières règles.", "link": {"numero":4}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -18700,8 +18707,8 @@
             "properties": {
                 "id": 27,
                 "name": "Italie",
-                "d1978": {"niveau":3,"texte":"Italie : avortement autorisé, loi qui sépare l’avortement durant les 90 premiers jours, et celui au-delà des 90 jours. Avant 90 jours, si la santé mentale ou physique de la mère ou si sa situation socio-économique ne permet pas une poursuite de grossesse, ou s’il y a des chances que l’enfant naisse avec des anomalies ou malformations. Au-delà de 90 jours, si la grossesse représente une menace sérieuse pour la santé physique, mentale ou pathologique de la mère ou de l’enfant."},
-                "d1989": {"niveau":2,"texte":"Italie : La prise d’une pilule abortive est autorisée jusqu’à la 7e semaine mais seulement dans certaines régions."}
+                "d1978": {"niveau":3,"texte":"Italie : avortement autorisé, loi qui sépare l’avortement durant les 90 premiers jours, et celui au-delà des 90 jours. Avant 90 jours, si la santé mentale ou physique de la mère ou si sa situation socio-économique ne permet pas une poursuite de grossesse, ou s’il y a des chances que l’enfant naisse avec des anomalies ou malformations. Au-delà de 90 jours, si la grossesse représente une menace sérieuse pour la santé physique, mentale ou pathologique de la mère ou de l’enfant.", "link": {"numero":23}},
+                "d1989": {"niveau":2,"texte":"Italie : La prise d’une pilule abortive est autorisée jusqu’à la 7e semaine mais seulement dans certaines régions.", "link": {"numero":23}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -19362,11 +19369,11 @@
             "properties": {
                 "id": 28,
                 "name": "Suisse",
-                "d1942": {"niveau":1,"texte":"Suisse : L’avortement est passible d’une peine d’emprisonnement pour la femme ayant avorté ainsi que pour le médecin l’y ayant aidé, d’après le Code Pénal."},
-                "d1973": {"niveau":3,"texte":"Suisse - Février 1973 : Création de la Fondation de l’Union suisse pour décriminaliser l’avortement (USPDA)."},
-                "d1974": {"niveau":3,"texte":"Suisse - 1974 à 1975 : Des propositions de loi et des pétitions sont déposées en faveur de l’avortement mais sont toutes rejetées."},
-                "d2002": {"niveau":4,"texte":"Suisse - Loi du 2 juin 2002 : une personne enceinte peut décider jusqu’à la douzième semaine de grossesse si elle veut poursuivre ou interrompre sa grossesse."},
-                "d2022": {"niveau":4,"texte":"Suisse : Loi du 2 juin 2022 - « La mère a jusqu’à la 12e semaine pour décider d’interrompre ou non sa grossesse »."}
+                "d1942": {"niveau":1,"texte":"Suisse : L’avortement est passible d’une peine d’emprisonnement pour la femme ayant avorté ainsi que pour le médecin l’y ayant aidé, d’après le Code Pénal.", "link": {"numero":17}},
+                "d1973": {"niveau":3,"texte":"Suisse - Février 1973 : Création de la Fondation de l’Union suisse pour décriminaliser l’avortement (USPDA).", "link": {"numero":17}},
+                "d1974": {"niveau":3,"texte":"Suisse - 1974 à 1975 : Des propositions de loi et des pétitions sont déposées en faveur de l’avortement mais sont toutes rejetées.", "link": {"numero":17}},
+                "d2002": {"niveau":4,"texte":"Suisse - Loi du 2 juin 2002 : une personne enceinte peut décider jusqu’à la douzième semaine de grossesse si elle veut poursuivre ou interrompre sa grossesse.", "link": {"numero":16}},
+                "d2022": {"niveau":4,"texte":"Suisse : Loi du 2 juin 2022 - « La mère a jusqu’à la 12e semaine pour décider d’interrompre ou non sa grossesse ».", "link": {"numero":17}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -19569,9 +19576,9 @@
             "properties": {
                 "id": 29,
                 "name": "Pays-Bas",
-                "d1971": {"niveau":4,"texte":"Pays-Bas : La première clinique réalisant des interruptions volontaires de grossesse ouvre ses portes."},
-                "d1984": {"niveau":4,"texte":"Pays-Bas - 1er novembre 1984 : La loi proposée en 1981 entre en vigueur, l’interruption volontaire de grossesse est dépénalisée. Cette loi fixe le délai légal de pratique d’une IVG à 24 semaines de grossesse."},
-                "d1985": {"niveau":4,"texte":"Pays-Bas : Le droit à l’avortement est couvert par le système de santé."}
+                "d1971": {"niveau":4,"texte":"Pays-Bas : La première clinique réalisant des interruptions volontaires de grossesse ouvre ses portes.", "link": {"numero":15}},
+                "d1984": {"niveau":4,"texte":"Pays-Bas - 1er novembre 1984 : La loi proposée en 1981 entre en vigueur, l’interruption volontaire de grossesse est dépénalisée. Cette loi fixe le délai légal de pratique d’une IVG à 24 semaines de grossesse.", "link": {"numero":14}},
+                "d1985": {"niveau":4,"texte":"Pays-Bas : Le droit à l’avortement est couvert par le système de santé.", "link": {"numero":15}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -21025,8 +21032,8 @@
             "properties": {
                 "id": 36,
                 "name": "Monaco",
-                "d1967": {"niveau":1,"texte":"Monaco : L’avortement est interdit et est considéré comme illégal."},
-                "d2019": {"niveau":3,"texte":"Monaco : Autorisation d’avorter dans les cas de viol, de risque pour la santé de la mère ou d’affection ou malformation de l’enfant (loi datant de 2009)."}
+                "d1967": {"niveau":1,"texte":"Monaco : L’avortement est interdit et est considéré comme illégal.", "link": {"numero":33}},
+                "d2019": {"niveau":3,"texte":"Monaco : Autorisation d’avorter dans les cas de viol, de risque pour la santé de la mère ou d’affection ou malformation de l’enfant (loi datant de 2009).", "link": {"numero":33}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21049,7 +21056,7 @@
             "properties": {
                 "id": 37,
                 "name": "Andorre",
-                "d1913": {"niveau":1,"texte":"Andorre (depuis toujours) : Il est illégal y compris en cas d’inceste, de viol, d’anomalie grave du fœtus ou de danger pour la vie de la mère. Passible de six mois de prison pour la femme et de trois ans interdiction d’exercer pour le médecin."}
+                "d1913": {"niveau":1,"texte":"Andorre (depuis toujours) : Il est illégal y compris en cas d’inceste, de viol, d’anomalie grave du fœtus ou de danger pour la vie de la mère. Passible de six mois de prison pour la femme et de trois ans interdiction d’exercer pour le médecin.", "link": {"numero":57}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21355,9 +21362,9 @@
             "properties": {
                 "id": 40,
                 "name": "Portugal",
-                "d1984": {"niveau":2,"texte":"Portugal : Jusqu’à cette date l’avortement était illégal et passible de 3 ans de prison pour les femmes qui y avaient recours."},
-                "d2007": {"niveau":4,"texte":"Portugal : L’avortement est légalisé mais devient payant et restreint."},
-                "d2015": {"niveau":4,"texte":"Portugal : L’avortement d’une grossesse est autorisé jusqu’à la dixième semaine."}
+                "d1984": {"niveau":2,"texte":"Portugal : Jusqu’à cette date l’avortement était illégal et passible de 3 ans de prison pour les femmes qui y avaient recours.", "link": {"numero":6}},
+                "d2007": {"niveau":4,"texte":"Portugal : L’avortement est légalisé mais devient payant et restreint.", "link": {"numero":7}},
+                "d2015": {"niveau":4,"texte":"Portugal : L’avortement d’une grossesse est autorisé jusqu’à la dixième semaine.", "link": {"numero":7}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -22329,8 +22336,8 @@
             "properties": {
                 "id": 44,
                 "name": "Malte",
-                "d2021": {"niveau":1,"texte":"Malte : Une députée dépose un texte au parlement visant à dépénaliser l’avortement. Le Président menace de quitter son poste s’il doit signer le projet de loi."},
-                "d2022": {"niveau":1,"texte":"Malte : Un recours est déposé par 135 médecins contre le Premier Ministre et le Ministre de la Santé dans le but de demander la suppression de l’article du Code pénal condamnant la pratique d’avortements."}
+                "d2021": {"niveau":1,"texte":"Malte : Une députée dépose un texte au parlement visant à dépénaliser l’avortement. Le Président menace de quitter son poste s’il doit signer le projet de loi.", "link": {"numero":26}},
+                "d2022": {"niveau":1,"texte":"Malte : Un recours est déposé par 135 médecins contre le Premier Ministre et le Ministre de la Santé dans le but de demander la suppression de l’article du Code pénal condamnant la pratique d’avortements.", "link": {"numero":25}}
             },
             "geometry": {
                 "type": "MultiPolygon",
