@@ -13166,10 +13166,10 @@
             "properties": {
                 "id": 10,
                 "name": "Lettonie",
-                "d1940": {"niveau":1,"texte":"Membre de l’URSS : Le gouvernement soviétique interdit l’accès à l’avortement sauf pour des raisons médicales quand il est approuvé par un comité de médecins.","source":"https://en.wikipedia.org/wiki/Abortion_in_Latvia"},
-                "d1955": {"niveau":4,"texte":"URSS - 23 novembre 1955 : La mort de Staline entraîne le retour d’une législation favorable concernant l’avortement. Il est donc à nouveau en vigueur depuis cette date. La loi autorise l’avortement sur simple demande de la femme jusqu’à 12 semaines (28 semaines pour raisons médicales), et garantit la gratuité sous certaines conditions.","source":"https://fr.wikipedia.org/wiki/Avortement_en_Russie"},
-                "d1987": {"niveau":4,"texte":"Lettonie - 31 décembre 1987 : l’Union soviétique a annoncé qu’elle permettrait à de nombreux établissements médicaux de pratiquer des avortements jusqu’à la 28e semaine de grossesse."},
-                "d2013": {"niveau":4,"texte":"Lettonie : Un avortement peut être effectué sans demande jusqu’à la 12e semaine de grossesse, et peut être demandé jusqu’à la 28e."}
+                "d1940": {"niveau":1,"texte":"Membre de l’URSS : Le gouvernement soviétique interdit l’accès à l’avortement sauf pour des raisons médicales quand il est approuvé par un comité de médecins.", "link": {"numero":58}},
+                "d1955": {"niveau":4,"texte":"URSS - 23 novembre 1955 : La mort de Staline entraîne le retour d’une législation favorable concernant l’avortement. Il est donc à nouveau en vigueur depuis cette date. La loi autorise l’avortement sur simple demande de la femme jusqu’à 12 semaines (28 semaines pour raisons médicales), et garantit la gratuité sous certaines conditions.", "link": {"numero":18}},
+                "d1987": {"niveau":4,"texte":"Lettonie - 31 décembre 1987 : l’Union soviétique a annoncé qu’elle permettrait à de nombreux établissements médicaux de pratiquer des avortements jusqu’à la 28e semaine de grossesse.", "link": {"numero":51}},
+                "d2013": {"niveau":4,"texte":"Lettonie : Un avortement peut être effectué sans demande jusqu’à la 12e semaine de grossesse, et peut être demandé jusqu’à la 28e.", "link": {"numero":51}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -13325,8 +13325,8 @@
             "properties": {
                 "id": 11,
                 "name_fr": "Suède",
-                "d1938": {"niveau":4,"texte":"Suède : L’avortement thérapeutique est autorisé."},
-                "d1975": {"niveau":4,"texte":"Suède : Tout type d’interruption de grossesse est autorisé sans justification jusqu’à 18 semaines, cependant ce droit réservé aux suédoises."}
+                "d1938": {"niveau":4,"texte":"Suède : L’avortement thérapeutique est autorisé.", "link": {"numero":60}},
+                "d1975": {"niveau":4,"texte":"Suède : Tout type d’interruption de grossesse est autorisé sans justification jusqu’à 18 semaines, cependant ce droit réservé aux suédoises.", "link": {"numero":59}}
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -20809,10 +20809,10 @@
             "properties": {
                 "id": 34,
                 "name": "Bulgarie",
-                "d1956": {"niveau":4,"texte":"Bulgarie - 27 Avril 1956 : Une loi passe, autorisant l’avortement  jusqu’à 12 semaines y compris dans une démarche thérapeutique."},
-                "d1968": {"niveau":1,"texte":"Bulgarie - Février 1968 : L’avortement est interdit."},
-                "d1973": {"niveau":2,"texte":"Bulgarie : L’IVG est autorisée uniquement en cas de viol ou d’inceste (pour les femmes de moins de 18 ans ou au-dessus de 45 ans)."},
-                "d1990": {"niveau":4,"texte":"Bulgarie - 1er février 1990 : L’avortement est autorisé jusqu’à 12 semaines de grossesse et jusqu’à 20 semaines si la santé de la mère est en danger ou le fœtus porteur de maladie ou handicap."}
+                "d1956": {"niveau":4,"texte":"Bulgarie - 27 Avril 1956 : Une loi passe, autorisant l’avortement  jusqu’à 12 semaines y compris dans une démarche thérapeutique.", "link": {"numero":61}},
+                "d1968": {"niveau":1,"texte":"Bulgarie - Février 1968 : L’avortement est interdit.", "link": {"numero":62}},
+                "d1973": {"niveau":2,"texte":"Bulgarie : L’IVG est autorisée uniquement en cas de viol ou d’inceste (pour les femmes de moins de 18 ans ou au-dessus de 45 ans).", "link": {"numero":61}},
+                "d1990": {"niveau":4,"texte":"Bulgarie - 1er février 1990 : L’avortement est autorisé jusqu’à 12 semaines de grossesse et jusqu’à 20 semaines si la santé de la mère est en danger ou le fœtus porteur de maladie ou handicap.", "link": {"numero":61}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21091,7 +21091,8 @@
             "properties": {
                 "id": 38,
                 "name": "Bosnie-Herzégovine",
-                "d1992": {"niveau":3,"texte":"Bosnie-Herzégovine : Indépendance du territoire en 1992, la nouvelle constitution établit que l’avortement est autorisé jusqu’à la 10e semaine de grossesse."}
+                "d1977": {"niveau":3,"texte":"Bosnie-Herzégovine : Comme la Serbie, la Bosnie-Herzégovine se situe à cette époque dans la Yougoslavie. En terme d'avortement, la loi est celle du 7 octobre 1977, à la suite du démantèlement de la Yougoslavie.L’avortement est autorisé jusqu’à la 10e semaine de grossesse", "link": {"numero":63}},
+                "d2008": {"niveau":3,"texte":"Bosnie-Herzégovine : Une exception est ajoutée à la loi, entre dix et vingt semaines, l'avortement a besoin de l'approbation d'un comité médical et est autorisé lorsque la vie ou la santé de la femme est menacée, lorsque le fœtus est gravement atteint, lorsque la grossesse résulte d'un viol ou pour des raisons psychosociales.", "link": {"numero":63}}
             },
             "geometry": {
                 "type": "Polygon",
@@ -21678,7 +21679,9 @@
             "properties": {
                 "id": 41,
                 "name": "Moldavie",
-                "d1955": {"niveau":3,"texte":"Moldavie : L’avortement est légal jusqu’à 12 semaines et jusqu’à 21 semaines pour des raisons de santé (malformation du fœtus, danger pour la vie ou la santé de la mère, pour une mère âgée de moins de 18 ans ou de plus de 40 ans)."}
+                "d1955": {"niveau":3,"texte":"Moldavie : L’avortement est légal jusqu’à 12 semaines et jusqu’à 21 semaines pour des raisons de santé (malformation du fœtus, danger pour la vie ou la santé de la mère, pour une mère âgée de moins de 18 ans ou de plus de 40 ans).", "link": {"numero":64}},
+                "d2011": {"niveau":3,"texte":"Moldavie : Suite à la proposition d'un membre du parlement visant à restreindre l'accès à l'avortement, la mobilisation des sociétés civiles et les réactions négatives à l'échelle internationale ont exercé une pression sur le gouvernement, l'incitant à rejeter cette proposition.", "link": {"numero":64}},
+                "d2012": {"niveau":3,"texte":"Moldavie : la Loi sur la reproduction établit que  « toutes femmes a droit à un avortement en sécurité ».", "link": {"numero":64}}
             },
             "geometry": {
                 "type": "Polygon",
