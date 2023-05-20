@@ -15,10 +15,6 @@ body {
     width: 100%;
     height: auto;
 }
-main{
-    padding:15px;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -26,24 +22,22 @@ main{
   /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #2f184b;
-    /* border-radius: 8px; */
 }
-
-
+main{
+    padding:15px;
+}
 #logo {
     width: 5%;
     position: absolute ;
     top: 0px;
     margin: 10px;
 }
-
 h1 {
     text-align: center;
     color: #f4effa;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 0.8px;
 }
-
 .parent {
     margin: 80px 20px;
     display: flex;
@@ -52,45 +46,29 @@ h1 {
     justify-content: space-around;
     align-items: center;
 }
-
 #information {
-    /*grid-area: 1 / 1 / 2 / 3;*/
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
     color: #f4effa;
     text-align: center;
 }
-
 a {
     color: black;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #2f184b;
-}
-
+/*Carte intercative + texte explicatif*/
 #map {
     border: black 1px solid;
-    /*width: 45vw;
-    height: 40%;*/
     position: relative;
 }
-
 #slide {
-    /*grid-area: 2 / 2 / 3 / 3;*/
-    /*height: 100%;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    /*position: absolute;*/
     z-index:1000;
 }
 
 .slider {
-    /*grid-area:2/2/3/3;*/
-    /*transform: translate(50%, -250%);*/
     width: 100%;
     background: #f4effa;
     border-radius: 20px;
@@ -129,7 +107,6 @@ p {
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
     color: #f4effa;
-    /* width: 100%; */
 }
 
 nav {
@@ -164,7 +141,8 @@ nav {
     opacity: 0.7;
 }
 
-/* infos concept */
+
+/* En savoir plus */
 
     .concept{
         position: relative;
@@ -177,20 +155,66 @@ nav {
     ul{
         list-style-type: none;
       }
-    .concept>p{
-        color:black;
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #2f184b;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        /* position: relative; */
     }
-    .concept>p>a{
-        color:black;
-        text-decoration:underline;
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2f184b;
     }
-.concept>p>a:hover{
-    color: #2f184b;
-}
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content p {
+        color: black;
+        font-family:  'Catamaran', sans-serif;
+    }
+
+    .dropdown-content h2 {
+        color: black;
+        font-family:  'Catamaran', sans-serif;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display:block;
+        position: relative;
+        background-color: #c5e8ff;
+        border-radius: 10px;
+        margin: 2% 5% 0% 5%;
+        padding: 1% 2%;
+        font-family:  'Catamaran', sans-serif;
+    }
+
 
 footer{
     height:35px;
 }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 700px) {
@@ -206,16 +230,16 @@ footer{
     .parent{
         display: flex;
         flex-direction:column;
-        /*height:100%;*/
         justify-content:flex-start;
     }
-
+    
+    
+    /*Carte intéractive + texte explicatif*/
+    
     #map {
         border: black 1px solid;
         width: 80vw!important;
         height:60vh!important;
-        /*position: absolute;*/
-        /*margin: 0 25%;*/
     }
 
     #slide {
@@ -228,10 +252,6 @@ footer{
         align-items:center;
     }
     
-    /*.slider {
-        grid-area: 5 / 1 / 6 /2;
-        
-    }*/
     #rangeValue {
         position: relative;
         top: 0%;
@@ -262,65 +282,3 @@ footer{
         width: 200px;
     }
   }
-/* .concept{
-        position: relative;
-        background-color: #c5e8ff;
-        border-radius: 10px;
-        margin: 2% 5% 0% 5%;
-        padding: 1% 2%;
-        font-family:  'Catamaran', sans-serif;
-    } */
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #2f184b;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-    /* position: relative; */
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2f184b;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content p {
-    color: black;
-    font-family:  'Catamaran', sans-serif;
-}
-
-.dropdown-content h2 {
-    color: black;
-    font-family:  'Catamaran', sans-serif;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
-    position: relative;
-    background-color: #c5e8ff;
-    border-radius: 10px;
-    margin: 2% 5% 0% 5%;
-    padding: 1% 2%;
-    font-family:  'Catamaran', sans-serif;
-}
