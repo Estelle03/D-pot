@@ -7,17 +7,15 @@ var geojson;
 // Initialisation du pays choisi (pas encore choisi)
 var layer = null;
 
-//Tableau de liens pour les sources
+//Tableau de liens pour les sources - à mettre dans un json à part
 const Sources = [
     {
         "lien":"#",
         "nom":"Source indisponible"
-    },
-    {
+    },{
         "lien":"https://www.femmeactuelle.fr/sante/sante-pratique/droit-avortement-en-france-histoire-d-un-combat-2047911",
         "nom":"Droit à l’avortement en France, l’histoire du combat - Femme Actuelle"
-    },
-    {
+    },{
         "lien":"https://fr.wikipedia.org/wiki/Droit_de_l%27avortement#:~:text=13%20d%C3%A9cembre%202018.-,Islande,tout%20moment%20de%20la%20grossesse",
         "nom":"Droit de l’avortement - Wikipédia"
     },
@@ -107,6 +105,195 @@ const Sources = [
     },{
         "lien":"https://causam.fr/medecine-et-sante-encyclopedie/180-histoire-de-l-avortement",
         "nom":"Histoire de l’avortement - Encyclopédie: médecine et santé - Causam"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Histoire_des_femmes_en_Norv%C3%A8ge",
+        "nom":"Histoire des femmes en Norvège - Wikipédia"
+    },{
+        "lien":"https://www.touteleurope.eu/societe/le-droit-a-l-avortement-dans-l-union-europeenne/",
+        "nom":"Article - Le droit à l’avortement dans l’Union européenne - Toute l’europe"
+    },{
+        "lien":"https://www.sudouest.fr/societe/le-droit-a-l-avortement-et-son-histoire-un-tres-long-combat-11440980.php",
+        "nom":"Article - Le droit à l’avortement et son histoire - Sud Ouest"
+    },{
+        "lien":"https://reproductiverights.org/maps/worlds-abortion-laws/?country=FIN",
+        "nom":"Article - The World’s Abortion Laws - Reproductive rights"
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_%C3%A0_Monaco",
+        "nom":"Avortement à Monaco - Wikipédia"
+    },{
+        "lien":"https://en.wikipedia.org/wiki/Estonia#World_War_II,_Soviet_and_German_Occupations",
+        "nom":"Avortement en Estonie - Wikipédia (en)"
+    },{
+        "lien":"https://your-safe-abortion.com/law/abortion-laws-poland/",
+        "nom":"L’avortement en pologne - Your safe abortion (en)"
+    },{
+        "lien":"https://abort-report.eu/europe/",
+        "nom":"Europe - Abort report (en)"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_en_Bi%C3%A9lorussie ",
+        "nom":"Avortement au Bélarus - Wikipédia"
+    },{
+        "lien":"https://www.village-justice.com/articles/reglementation-juridique-avortement-hongrie,32211.html ",
+        "nom":"Article - Réglementation juridique avortement en Hongrie - site village justice"
+    },{
+        "lien":"https://en.wikipedia.org/wiki/Abortion_in_Serbia",
+        "nom":"Avortement en Serbie - Wikipédia (en)"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_au_Liechtenstein ",
+        "nom":"Avortement au Liechtenstein - Wikipédia"
+    },{
+        "lien":"https://fr.wikipedia.org/wiki/Avortement_%C3%A0_Saint-Marin ",
+        "nom":"Avortement au Saint-Marin - Wikipédia"
+    },{
+        "lien":"https://lepetitjournal.com/societe/avortement-en-europe-quels-sont-les-delais-respecter-260137",
+        "nom":"Article - Avortement en Europe : Quels sont les délais à respecter - site le petit journal"
+    },{
+        "lien":"https://en.wikipedia.org/wiki/Abortion_in_Romania",
+        "nom":"Avortement en Roumanie - Wikipédia (en)"
+    },{
+        "lien":"https://en.wikipedia.org/wiki/Women_in_Vatican_City",
+        "nom":"Avortement au Vatican - Wikipédia (en)"
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
+    },{
+        "lien":"",
+        "nom":""
     }
 ]
 
