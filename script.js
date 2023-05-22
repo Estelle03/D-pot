@@ -389,8 +389,8 @@ $.getJSON(mapEurope,function(data){
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    console.log(data)
+    }).addTo(map);/* 
+    console.log(data) */
     geojsoncouche = L.geoJson(data, {clickable: false, style: style}).addTo(map);
     legend.addTo(map);
     geojson = L.geoJson(data, {style: hoverstyle, onEachFeature: onEachFeature}).addTo(map);
