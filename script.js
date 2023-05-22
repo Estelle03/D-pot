@@ -7,7 +7,7 @@ var geojson;
 // Initialisation du pays choisi (pas encore choisi)
 var layer = null;
 
-const Source = [
+const Sources = [
         {
             "lien":"#",
             "nom":"Source indisponible"
@@ -273,7 +273,6 @@ function afficheTexte(feature){
     let valeurCurseur = document.querySelector("#fader").value;
     valeurCurseur = testAfficheText(valeurCurseur,feature);
     if(valeurCurseur >= 1912){
-        console.log(feature.properties["d"+valeurCurseur].texte)
         let content = "<strong>Depuis " 
         + valeurCurseur 
         + "</strong><br>" 
