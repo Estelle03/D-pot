@@ -22317,7 +22317,7 @@
             "properties": {
                 "id": 43,
                 "name": "Vatican",
-                "d1913": {"niveau":1,"texte":"Vatican (depuis 1398) : Il n’existe aucune loi interdisant l’avortement mais puisque ce sont les règles de la Bible qui s’appliquent sur ce territoire, l’avortement est un acte moralement inacceptable.", "link": {"numero":44}}
+                "d1913": {"niveau":2,"texte":"Vatican (depuis 1398) : Il n’existe aucune loi interdisant l’avortement mais puisque ce sont les règles de la Bible qui s’appliquent sur ce territoire, l’avortement est considéré comme un acte \"moralement inacceptable\", bien que \"l'avortement indirecte\", c'est à dire s'il résulte d'une procédure médicale, soit toléré.", "link": {"numero":44}}
             },
             "geometry": {
                 "type": "Polygon",
